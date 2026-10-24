@@ -1,0 +1,1823 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><title>Brownies &amp; Brookiess — Haute Pâtisserie</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&amp;family=Hanken+Grotesk:ital,wght@0,300..800;1,300..800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@100..900&amp;family=Hanken+Grotesk:wght@100..900&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;height:auto;min-height:100%;overflow-x:clip;overflow-y:auto;}body{overscroll-behavior:auto;}main{flex-shrink:0;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}
+#searchResults::-webkit-scrollbar,#cartItems::-webkit-scrollbar{display:none;}
+@media (max-width:1023px){
+  html,body{overflow-x:clip;overflow-y:auto;max-width:100%;}
+  #mobileNav{display:none;}
+  #mobileNav.open{display:block;}
+}
+@media (min-width:1280px){
+  #mobileNav,#mobileNavBtn{display:none!important;}
+}
+.hero-headline{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  font-weight:700;
+  letter-spacing:-0.04em;
+  line-height:0.86;
+  font-size:clamp(52px, 12vw, 72px);
+}
+.hero-headline .hero-line{display:block;}
+.hero-headline .hero-amp{
+  display:block;
+  font-style:italic;
+  font-weight:600;
+  font-size:1.08em;
+  line-height:0.72;
+  letter-spacing:-0.06em;
+  margin:0.02em 0 0.04em;
+}
+.hero-tagline{
+  font-family:"Bodoni Moda",serif;
+  font-style:italic;
+  font-weight:500;
+  font-size:clamp(18px, 2.4vw, 28px);
+  line-height:1.35;
+  letter-spacing:-0.01em;
+  max-width:22em;
+}
+@media (min-width:1024px){
+  .hero-headline{font-size:96px;}
+  .hero-tagline{font-size:28px;line-height:1.35;}
+}
+@media (max-width:767px){
+  header .brand-name{font-size:16px!important;line-height:20px!important;max-width:42vw;}
+  .hero-stage{overflow-x:hidden;overflow-y:visible;}
+  .hero-headline{font-size:clamp(48px, 14vw, 64px);}
+  .hero-closing-card{display:none!important;}
+  #menuToast{left:1rem;right:1rem;top:5.5rem;}
+  #threejs-container-ANIMATION_2{min-height:70vh;}
+  #threejs-container-ANIMATION_2 canvas{touch-action:pan-y;}
+}
+@media (max-width:380px){
+  header .h-20{height:4.5rem;}
+  main.pt-20{padding-top:4.5rem;}
+}
+</style>
+<script src="https://cdn.tailwindcss.com"></script>
+<script id="tailwind-config">
+tailwind.config={darkMode:"class",theme:{extend:{"colors":{"primary-fixed":"#ffdbcb","on-secondary-container":"#704200","surface":"#fef9f3","on-secondary-fixed":"#2c1700","outline":"#82746e","on-tertiary-fixed":"#271811","error-container":"#ffdad6","on-tertiary":"#ffffff","tertiary-fixed":"#f9ddd1","secondary-container":"#fead4f","on-error":"#ffffff","on-secondary":"#ffffff","on-tertiary-container":"#b0978d","surface-container":"#f2ede7","on-surface":"#1d1b18","surface-container-low":"#f8f3ed","secondary-fixed":"#ffdcbc","inverse-surface":"#32302c","surface-container-highest":"#e6e2dc","secondary":"#895200","surface-bright":"#fef9f3","surface-dim":"#ded9d4","error":"#ba1a1a","primary-fixed-dim":"#ecbca7","surface-tint":"#7a5645","tertiary-fixed-dim":"#dcc1b6","surface-container-lowest":"#ffffff","on-tertiary-fixed-variant":"#56433a","inverse-primary":"#ecbca7","secondary-fixed-dim":"#ffb86a","on-primary-fixed-variant":"#603f2f","on-surface-variant":"#50443f","outline-variant":"#d4c3bc","background":"#fef9f3","tertiary-container":"#413028","on-error-container":"#93000a","on-primary-container":"#be927e","on-background":"#1d1b18","on-secondary-fixed-variant":"#683d00","surface-container-high":"#ece7e2","on-primary-fixed":"#2e1508","tertiary":"#2a1b14","primary-container":"#4a2c1d","surface-variant":"#e6e2dc","on-primary":"#ffffff","inverse-on-surface":"#f5f0ea","primary":"#31170a"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-2xl":"5rem","margin":"2rem","margin-desktop":"5rem","gutter-mobile":"1rem","space-sm":"0.5rem","space-lg":"1.75rem","gutter-desktop":"2.5rem","margin-mobile":"1.25rem","gutter":"1.5rem","space-md":"1rem","space-xl":"3rem","space-xs":"0.25rem"},"fontFamily":{"label-sm":["Hanken Grotesk"],"label-md":["Hanken Grotesk"],"headline-lg-mobile":["Bodoni Moda"],"display-hero-mobile":["Bodoni Moda"],"body-sm":["Hanken Grotesk"],"body-lg":["Hanken Grotesk"],"display-hero":["Bodoni Moda"],"headline-lg":["Bodoni Moda"],"headline-md":["Bodoni Moda"],"body-md":["Hanken Grotesk"],"headline-sm":["Bodoni Moda"],"label-lg":["Hanken Grotesk"]},"fontSize":{"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.1em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"500"}],"headline-lg-mobile":["32px",{"lineHeight":"38px","letterSpacing":"-0.01em","fontWeight":"400"}],"display-hero-mobile":["40px",{"lineHeight":"48px","letterSpacing":"-0.01em","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"-0.005em","fontWeight":"400"}],"display-hero":["64px",{"lineHeight":"72px","letterSpacing":"-0.02em","fontWeight":"400"}],"headline-lg":["44px",{"lineHeight":"52px","letterSpacing":"-0.015em","fontWeight":"400"}],"headline-md":["30px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"500"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"headline-sm":["22px",{"lineHeight":"28px","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.08em","fontWeight":"600"}]}}}};
+</script>
+</head>
+<body class="bg-surface text-on-surface font-body-md text-body-md antialiased min-h-screen flex flex-col selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(42,27,20,0.06)]"><div class="h-20 max-w-[1440px] mx-auto px-margin-mobile md:px-margin lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-3 group focus:outline-none" data-path="home" href="#"><img alt="B&amp;B" class="h-10 w-10 rounded-lg object-contain transition-transform duration-300 group-hover:scale-105" src="logo.jpg"><div class="flex flex-col min-w-0"><span class="brand-name font-headline-sm text-headline-sm tracking-tight text-primary leading-none truncate">Brownies &amp; Brookiess</span><span class="font-label-sm text-label-sm uppercase text-secondary font-bold tracking-widest mt-0.5 hidden sm:block">Home Baker</span></div></a></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-primary font-label-lg border-b-2 border-secondary pb-1"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors uppercase tracking-wider" data-path="our-brookies" href="#">Our Brookies</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors uppercase tracking-wider" data-path="menu-flavors" href="#menu-flavors">Menu &amp; Flavors</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors uppercase tracking-wider" data-path="the-bakehouse-story" href="#find-us">The Bakehouse Story</a></nav><div class="flex items-center gap-space-sm sm:gap-space-md"><button aria-label="Open menu" class="xl:hidden w-10 h-10 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all" id="mobileNavBtn" onclick="toggleMobileNav()" type="button"><span class="material-symbols-outlined text-[24px]" id="mobileNavIcon">menu</span></button><button aria-label="Search confectionery" class="w-10 h-10 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all" onclick="openSearch()" type="button"><span class="material-symbols-outlined text-[20px]">search</span></button><button class="relative flex items-center justify-center w-10 h-10 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all" onclick="openCart()" type="button"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-secondary text-on-secondary font-label-sm text-[10px] leading-none flex items-center justify-center font-bold" id="cartBadge">0</span></button><button class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-1" onclick="openLogin()" type="button" id="profileBtn"><span class="material-symbols-outlined text-on-primary text-[18px]" id="profileIcon">person</span></button></div></div></header>
+<div class="fixed inset-x-0 top-20 z-40 xl:hidden bg-surface/95 backdrop-blur-xl border-b border-outline-variant/30 shadow-[0_8px_24px_rgba(42,27,20,0.08)]" id="mobileNav" style="display:none;">
+  <nav class="max-w-[1440px] mx-auto px-margin-mobile py-4 flex flex-col gap-1">
+    <a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:bg-surface-container rounded-lg px-3 py-3 uppercase tracking-wider" href="#" onclick="closeMobileNav()">Our Brookies</a>
+    <a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:bg-surface-container rounded-lg px-3 py-3 uppercase tracking-wider" href="#menu-flavors" onclick="closeMobileNav()">Menu &amp; Flavors</a>
+    <a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:bg-surface-container rounded-lg px-3 py-3 uppercase tracking-wider" href="#find-us" onclick="closeMobileNav()">The Bakehouse Story</a>
+  </nav>
+</div>
+<main class="w-full pt-20 bg-surface grow shrink-0"><div class="hero-stage flex flex-col w-full relative overflow-x-hidden overflow-y-visible select-none" style="min-height:calc(100vh - 5rem);min-height:calc(100dvh - 5rem)">
+<!-- Immersive Three.js 3D Canvas Background -->
+<div class="absolute inset-0 w-full h-full pointer-events-none z-0 overflow-hidden">
+<!-- STITCH_THREEJS_START:ANIMATION_2 class="absolute inset-0 w-full h-full bg-transparent" -->
+<div class="absolute inset-0 w-full h-full bg-transparent" style="display:block;">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<div id="threejs-container-ANIMATION_2" style="width:100%;height:100%"></div>
+<script>
+(function() {
+  const container = document.getElementById('threejs-container-ANIMATION_2');
+  // Interactive Three.js 3D Cookie & Brookie Showcase
+  // Defer size reads until after layout to avoid 0x0 on Vercel fast-load
+function getContainerSize() {
+  const w = container.clientWidth || container.offsetWidth || window.innerWidth;
+  const h = container.clientHeight || container.offsetHeight || window.innerHeight;
+  return { w: w || window.innerWidth, h: h || window.innerHeight };
+}
+const initSize = getContainerSize();
+const width = initSize.w;
+const height = initSize.h;
+
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
+camera.position.set(0, 0, 11);
+
+const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+renderer.setSize(width, height);
+renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.domElement.style.pointerEvents = 'none';
+renderer.domElement.style.touchAction = 'pan-y';
+renderer.domElement.style.width = '100%';
+renderer.domElement.style.height = '100%';
+container.style.pointerEvents = 'none';
+container.appendChild(renderer.domElement);
+
+// Lighting setup for warm, decadent chocolate bakery illumination
+const ambientLight = new THREE.AmbientLight(0xfff3e6, 1.2);
+scene.add(ambientLight);
+
+const keyLight = new THREE.DirectionalLight(0xffecd6, 2.5);
+keyLight.position.set(6, 8, 8);
+keyLight.castShadow = true;
+scene.add(keyLight);
+
+const rimLight = new THREE.PointLight(0xff9d42, 2.0, 30);
+rimLight.position.set(-8, -4, 4);
+scene.add(rimLight);
+
+const softFill = new THREE.DirectionalLight(0xecd8c6, 1.0);
+softFill.position.set(-6, 3, 2);
+scene.add(softFill);
+
+// Main Master Group
+const mainGroup = new THREE.Group();
+scene.add(mainGroup);
+
+// Materials
+// 1. Brownie fudge chocolate base (dark rich cocoa)
+const brownieMat = new THREE.MeshStandardMaterial({
+  color: 0x2A150B,
+  roughness: 0.85,
+  metalness: 0.05,
+  bumpScale: 0.1
+});
+
+// 2. Cookie dough base (golden toasted amber-tan)
+const cookieDoughMat = new THREE.MeshStandardMaterial({
+  color: 0xD89648,
+  roughness: 0.75,
+  metalness: 0.05
+});
+
+// 3. Melted/glossy chocolate chips
+const chocChipMat = new THREE.MeshStandardMaterial({
+  color: 0x160B06,
+  roughness: 0.25,
+  metalness: 0.15
+});
+
+// 4. White chocolate chip chunks
+const whiteChocMat = new THREE.MeshStandardMaterial({
+  color: 0xFDF4E3,
+  roughness: 0.35,
+  metalness: 0.1
+});
+
+// 5. Flaky sea salt particles
+const saltMat = new THREE.MeshStandardMaterial({
+  color: 0xFFFFFF,
+  roughness: 0.1,
+  metalness: 0.4
+});
+
+// Helper: Create an authentic Brookie (Half Brownie, Half Cookie layered hybrid)
+function createBrookieMesh() {
+  const brookieGroup = new THREE.Group();
+
+  // Bottom Layer: Rich fudgy square brownie
+  const brownieBaseGeo = new THREE.CylinderGeometry(2.4, 2.5, 0.65, 36);
+  // Add organic dough deform to the geometry
+  const pos = brownieBaseGeo.attributes.position;
+  for (let i = 0; i < pos.count; i++) {
+    const vx = pos.getX(i);
+    const vy = pos.getY(i);
+    const vz = pos.getZ(i);
+    const noise = (Math.sin(vx * 3.5) + Math.cos(vz * 3.5)) * 0.08;
+    pos.setXYZ(i, vx + noise * 0.5, vy, vz + noise * 0.5);
+  }
+  brownieBaseGeo.computeVertexNormals();
+
+  const brownieBase = new THREE.Mesh(brownieBaseGeo, brownieMat);
+  brownieBase.position.y = -0.32;
+  brownieBase.castShadow = true;
+  brownieBase.receiveShadow = true;
+  brookieGroup.add(brownieBase);
+
+  // Top Layer: Golden chewy chocolate chip cookie layer crowned with dome
+  const cookieTopGeo = new THREE.CylinderGeometry(2.2, 2.4, 0.7, 36);
+  const posTop = cookieTopGeo.attributes.position;
+  for (let i = 0; i < posTop.count; i++) {
+    const vx = posTop.getX(i);
+    const vy = posTop.getY(i);
+    const vz = posTop.getZ(i);
+    const noise = (Math.sin(vx * 4.0) * Math.cos(vz * 4.0)) * 0.12;
+    posTop.setXYZ(i, vx * (1.0 + (vy > 0 ? -0.05 : 0)), vy + noise, vz * (1.0 + (vy > 0 ? -0.05 : 0)));
+  }
+  cookieTopGeo.computeVertexNormals();
+
+  const cookieTop = new THREE.Mesh(cookieTopGeo, cookieDoughMat);
+  cookieTop.position.y = 0.32;
+  cookieTop.castShadow = true;
+  cookieTop.receiveShadow = true;
+  brookieGroup.add(cookieTop);
+
+  // Add decadent chocolate chips & chunks embedded on top & side
+  const chipGeo = new THREE.DodecahedronGeometry(0.28, 1);
+  const chipPositions = [
+    { x: 0.8, y: 0.65, z: 0.6, s: 1.1, rot: [0.4, 0.8, 0] },
+    { x: -0.9, y: 0.68, z: 0.5, s: 1.3, rot: [1.2, 0.1, 0.4] },
+    { x: -0.2, y: 0.72, z: -0.9, s: 1.4, rot: [0.2, 0.5, 0.9] },
+    { x: 1.1, y: 0.62, z: -0.7, s: 1.0, rot: [0.7, 1.1, 0.3] },
+    { x: 0.1, y: 0.75, z: 0.2, s: 1.5, rot: [0.1, 0.9, 0.6] },
+    { x: -1.3, y: 0.58, z: -0.4, s: 1.2, rot: [0.5, 0.2, 0.8] },
+    { x: 1.4, y: 0.55, z: 0.1, s: 1.1, rot: [0.9, 0.3, 0.2] },
+    // Melted droop chips on seam
+    { x: 2.1, y: 0.05, z: 0.8, s: 0.9, rot: [0.2, 0.4, 0.1] },
+    { x: -2.0, y: -0.1, z: -0.6, s: 1.0, rot: [0.8, 0.2, 0.5] }
+  ];
+
+  chipPositions.forEach(cp => {
+    const chip = new THREE.Mesh(chipGeo, chocChipMat);
+    chip.position.set(cp.x, cp.y, cp.z);
+    chip.scale.set(cp.s, cp.s * 0.7, cp.s);
+    chip.rotation.set(cp.rot[0], cp.rot[1], cp.rot[2]);
+    chip.castShadow = true;
+    brookieGroup.add(chip);
+  });
+
+  // White chocolate chunks & flaky salt flakes
+  const saltGeo = new THREE.BoxGeometry(0.08, 0.03, 0.08);
+  for (let s = 0; s < 18; s++) {
+    const salt = new THREE.Mesh(saltGeo, saltMat);
+    const angle = Math.random() * Math.PI * 2;
+    const r = Math.random() * 1.8;
+    salt.position.set(Math.cos(angle) * r, 0.72 + Math.random() * 0.05, Math.sin(angle) * r);
+    salt.rotation.set(Math.random(), Math.random(), Math.random());
+    brookieGroup.add(salt);
+  }
+
+  return brookieGroup;
+}
+
+// Helper: Classic Golden Chocolate Chip Cookie
+function createCookieMesh(size = 1.0) {
+  const cGroup = new THREE.Group();
+  const cGeo = new THREE.CylinderGeometry(1.6 * size, 1.7 * size, 0.45 * size, 28);
+  const pos = cGeo.attributes.position;
+  for (let i = 0; i < pos.count; i++) {
+    const vx = pos.getX(i);
+    const vy = pos.getY(i);
+    const vz = pos.getZ(i);
+    const n = Math.sin(vx * 5.0) * Math.sin(vz * 5.0) * 0.08 * size;
+    pos.setXYZ(i, vx, vy + n, vz);
+  }
+  cGeo.computeVertexNormals();
+
+  const cookieMesh = new THREE.Mesh(cGeo, cookieDoughMat);
+  cookieMesh.castShadow = true;
+  cGroup.add(cookieMesh);
+
+  // Chips
+  const chipGeo = new THREE.DodecahedronGeometry(0.22 * size, 1);
+  for (let i = 0; i < 7; i++) {
+    const chip = new THREE.Mesh(chipGeo, chocChipMat);
+    const angle = (i / 7) * Math.PI * 2 + (Math.random() - 0.5) * 0.5;
+    const dist = (0.3 + Math.random() * 0.9) * size;
+    chip.position.set(Math.cos(angle) * dist, 0.22 * size, Math.sin(angle) * dist);
+    chip.scale.set(1.1, 0.7, 1.1);
+    chip.rotation.set(Math.random(), Math.random(), Math.random());
+    cGroup.add(chip);
+  }
+  return cGroup;
+}
+
+// Helper: Dark Double Chocolate Fudge Brownie Stack
+function createBrownieCube(size = 1.0) {
+  const bGroup = new THREE.Group();
+  const bGeo = new THREE.BoxGeometry(2.0 * size, 1.2 * size, 2.0 * size, 12, 8, 12);
+  const pos = bGeo.attributes.position;
+  for (let i = 0; i < pos.count; i++) {
+    const vx = pos.getX(i);
+    const vy = pos.getY(i);
+    const vz = pos.getZ(i);
+    const n = (Math.sin(vx * 4.0) + Math.cos(vy * 4.0) + Math.sin(vz * 4.0)) * 0.04 * size;
+    pos.setXYZ(i, vx + n, vy + n, vz + n);
+  }
+  bGeo.computeVertexNormals();
+  const bMesh = new THREE.Mesh(bGeo, brownieMat);
+  bMesh.castShadow = true;
+  bGroup.add(bMesh);
+
+  // White choc & dark melted chunks
+  const chunkGeo = new THREE.DodecahedronGeometry(0.25 * size, 0);
+  for (let i = 0; i < 5; i++) {
+    const chunk = new THREE.Mesh(chunkGeo, i % 2 === 0 ? chocChipMat : whiteChocMat);
+    chunk.position.set(
+      (Math.random() - 0.5) * 1.5 * size,
+      0.6 * size + 0.05,
+      (Math.random() - 0.5) * 1.5 * size
+    );
+    chunk.scale.set(1.2, 0.6, 1.2);
+    chunk.rotation.set(Math.random(), Math.random(), Math.random());
+    bGroup.add(chunk);
+  }
+  return bGroup;
+}
+
+// 1. Centerpiece: The Signature Giant Brookie
+const heroBrookie = createBrookieMesh();
+heroBrookie.position.set(0.6, 0.0, 0);
+heroBrookie.rotation.set(0.45, -0.4, 0.2);
+mainGroup.add(heroBrookie);
+
+// 2. Floating Orbiting Items:
+// Top left floating chewy cookie
+const orbCookie1 = createCookieMesh(0.85);
+orbCookie1.position.set(-4.2, 2.6, -1.8);
+orbCookie1.rotation.set(0.6, 0.3, -0.4);
+mainGroup.add(orbCookie1);
+
+// Bottom right floating decadent brownie cube
+const orbBrownie1 = createBrownieCube(0.9);
+orbBrownie1.position.set(4.3, -2.5, -1.0);
+orbBrownie1.rotation.set(-0.35, 0.8, 0.5);
+mainGroup.add(orbBrownie1);
+
+// Bottom left mini brookie
+const miniBrookie = createBrookieMesh();
+miniBrookie.scale.set(0.55, 0.55, 0.55);
+miniBrookie.position.set(-3.8, -2.4, -2.0);
+miniBrookie.rotation.set(-0.5, 0.6, 0.2);
+mainGroup.add(miniBrookie);
+
+// Top right floating golden cookie
+const orbCookie2 = createCookieMesh(0.65);
+orbCookie2.position.set(3.8, 2.9, -2.5);
+orbCookie2.rotation.set(0.8, -0.5, 0.3);
+mainGroup.add(orbCookie2);
+
+// Decadent Floating Chocolate Crumb & Sea Salt Particles
+const crumbCount = 45;
+const crumbGeo = new THREE.DodecahedronGeometry(0.08, 0);
+const crumbs = [];
+
+for (let i = 0; i < crumbCount; i++) {
+  const isSalt = Math.random() > 0.75;
+  const mat = isSalt ? saltMat : (Math.random() > 0.5 ? chocChipMat : cookieDoughMat);
+  const crumb = new THREE.Mesh(crumbGeo, mat);
+  
+  const theta = Math.random() * Math.PI * 2;
+  const radius = 2.2 + Math.random() * 5.0;
+  crumb.position.set(
+    Math.cos(theta) * radius + (Math.random() - 0.5),
+    (Math.random() - 0.5) * 6.5,
+    (Math.random() - 0.5) * 5.0
+  );
+  const s = 0.4 + Math.random() * 0.9;
+  crumb.scale.set(s, s, s);
+  
+  crumb.userData = {
+    origY: crumb.position.y,
+    speed: 0.4 + Math.random() * 0.8,
+    rotSpeedX: (Math.random() - 0.5) * 0.03,
+    rotSpeedY: (Math.random() - 0.5) * 0.03,
+    offset: Math.random() * Math.PI * 2
+  };
+  
+  mainGroup.add(crumb);
+  crumbs.push(crumb);
+}
+
+// Mouse Interactive Parallax Tracking
+let mouseX = 0;
+let mouseY = 0;
+let targetX = 0;
+let targetY = 0;
+
+function onPointerMove(event) {
+  const point = event.touches ? event.touches[0] : event;
+  if (!point) return;
+  mouseX = (point.clientX / window.innerWidth) * 2 - 1;
+  mouseY = -(point.clientY / window.innerHeight) * 2 + 1;
+}
+window.addEventListener('mousemove', onPointerMove, { passive: true });
+
+const orbitY = { cookie1: 2.6, brownie1: -2.5, mini: -2.4, cookie2: 2.9 };
+const orbitAmp = { cookie1: 0.35, brownie1: 0.3, mini: 0.25, cookie2: 0.28 };
+
+function isMobileView() {
+  return window.innerWidth < 768;
+}
+
+function applySceneLayout() {
+  const mobile = isMobileView();
+  camera.fov = mobile ? 38 : 45;
+  camera.position.z = mobile ? 16 : 11;
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, mobile ? 1.5 : 2));
+
+  heroBrookie.position.x = mobile ? 0 : 0.6;
+  heroBrookie.scale.setScalar(mobile ? 0.78 : 1);
+
+  orbCookie1.position.x = mobile ? -2.05 : -4.2;
+  orbCookie1.position.z = mobile ? -2.2 : -1.8;
+  orbCookie1.scale.setScalar(mobile ? 0.62 : 1);
+
+  orbBrownie1.position.x = mobile ? 2.1 : 4.3;
+  orbBrownie1.position.z = mobile ? -1.8 : -1.0;
+  orbBrownie1.scale.setScalar(mobile ? 0.58 : 1);
+
+  miniBrookie.position.x = mobile ? -1.85 : -3.8;
+  miniBrookie.position.z = mobile ? -2.2 : -2.0;
+  miniBrookie.scale.setScalar(mobile ? 0.38 : 0.55);
+
+  orbCookie2.position.x = mobile ? 1.95 : 3.8;
+  orbCookie2.position.z = mobile ? -2.6 : -2.5;
+  orbCookie2.scale.setScalar(mobile ? 0.55 : 1);
+
+  orbitY.cookie1 = mobile ? 3.05 : 2.6;
+  orbitY.brownie1 = mobile ? -2.95 : -2.5;
+  orbitY.mini = mobile ? -2.85 : -2.4;
+  orbitY.cookie2 = mobile ? 3.15 : 2.9;
+  orbitAmp.cookie1 = mobile ? 0.18 : 0.35;
+  orbitAmp.brownie1 = mobile ? 0.16 : 0.3;
+  orbitAmp.mini = mobile ? 0.14 : 0.25;
+  orbitAmp.cookie2 = mobile ? 0.16 : 0.28;
+
+  crumbs.forEach(function(c, i) {
+    c.visible = !mobile || i % 3 === 0;
+  });
+
+  camera.updateProjectionMatrix();
+}
+
+applySceneLayout();
+
+// Window Resize Handling
+function onWindowResize() {
+  const sz = getContainerSize();
+  const w = sz.w;
+  const h = sz.h;
+  camera.aspect = w / h;
+  camera.updateProjectionMatrix();
+  renderer.setSize(w, h);
+  applySceneLayout();
+}
+window.addEventListener('resize', onWindowResize);
+// Also fix size after first paint in case container was 0 on initial load
+if (typeof requestAnimationFrame !== 'undefined') {
+  requestAnimationFrame(function() {
+    requestAnimationFrame(function() {
+      onWindowResize();
+    });
+  });
+}
+
+// Render Animation Loop
+let clock = new THREE.Clock();
+
+function animate() {
+  requestAnimationFrame(animate);
+  const delta = clock.getDelta();
+  const time = clock.getElapsedTime();
+
+  // Smooth mouse lerping
+  targetX += (mouseX - targetX) * 0.05;
+  targetY += (mouseY - targetY) * 0.05;
+
+  // Gentle float & continuous rotation of the Hero Brookie
+  heroBrookie.rotation.y = -0.4 + Math.sin(time * 0.6) * 0.45 + targetX * 0.6;
+  heroBrookie.rotation.x = 0.45 + Math.cos(time * 0.5) * 0.15 - targetY * 0.4;
+  heroBrookie.rotation.z = 0.2 + Math.sin(time * 0.4) * 0.1;
+  heroBrookie.position.y = Math.sin(time * 1.1) * 0.25;
+
+  // Orbiting satellite pastries animation
+  orbCookie1.rotation.y += 0.008;
+  orbCookie1.rotation.x += 0.005;
+  orbCookie1.position.y = orbitY.cookie1 + Math.cos(time * 1.3) * orbitAmp.cookie1;
+
+  orbBrownie1.rotation.y -= 0.007;
+  orbBrownie1.rotation.z += 0.006;
+  orbBrownie1.position.y = orbitY.brownie1 + Math.sin(time * 1.2) * orbitAmp.brownie1;
+
+  miniBrookie.rotation.y += 0.009;
+  miniBrookie.position.y = orbitY.mini + Math.sin(time * 0.95 + 1.0) * orbitAmp.mini;
+
+  orbCookie2.rotation.y -= 0.01;
+  orbCookie2.position.y = orbitY.cookie2 + Math.cos(time * 1.0 + 0.5) * orbitAmp.cookie2;
+
+  // Floating crumbs gentle drift
+  for (let i = 0; i < crumbs.length; i++) {
+    const c = crumbs[i];
+    c.position.y = c.userData.origY + Math.sin(time * c.userData.speed + c.userData.offset) * 0.35;
+    c.rotation.x += c.userData.rotSpeedX;
+    c.rotation.y += c.userData.rotSpeedY;
+  }
+
+  // Camera subtle parallax
+  const parallax = isMobileView() ? 0.4 : 1;
+  camera.position.x = targetX * 1.2 * parallax;
+  camera.position.y = targetY * 0.8 * parallax;
+  camera.lookAt(0, 0, 0);
+
+  renderer.render(scene, camera);
+}
+
+animate();
+
+})();
+</script>
+</div>
+<!-- STITCH_THREEJS_END:ANIMATION_2 -->
+<!-- Vignette & Warm Tint Overlays (no borders, purely tonal gradients) -->
+<div class="absolute inset-0 pointer-events-none bg-gradient-to-t from-surface via-transparent to-primary/20 mix-blend-multiply opacity-80"></div>
+<div class="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_50%_45%,transparent_20%,rgba(49,23,10,0.45)_100%)]"></div>
+</div>
+<!-- Ambient Floating Confectionery Dust Accents -->
+<div class="absolute top-1/4 left-10 w-72 h-72 rounded-full bg-secondary-container/15 blur-3xl pointer-events-none hidden md:block"></div>
+<div class="absolute bottom-1/3 right-12 w-96 h-96 rounded-full bg-primary-fixed-dim/20 blur-3xl pointer-events-none hidden md:block"></div>
+<!-- Foreground Interactive Orchestration -->
+<div class="relative z-10 flex flex-col justify-between w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin lg:px-margin-desktop py-space-md lg:py-space-lg flex-1 pointer-events-none">
+<!-- Top Row: Editorial Couture Headline, Micro-Badges & Primary Actions -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-start pt-space-xs pointer-events-none">
+<!-- Headline & Tagline -->
+<div class="lg:col-span-8 flex flex-col items-start gap-space-sm pointer-events-auto">
+<!-- Main Display Typography -->
+<div class="flex flex-col"><h1 class="hero-headline font-display-hero text-primary drop-shadow-sm">
+            <span class="hero-line">Brownies</span>
+            <span class="hero-amp">&amp;</span>
+            <span class="hero-line">Brookiess</span>
+          </h1>
+<p class="hero-tagline font-headline-md text-primary-container mt-3 drop-shadow-sm max-w-xl">
+            The Art of the Hybrid Bake — Half Fudgy Brownie, Half Chewy Golden Cookie.
+          </p></div>
+<!-- Call to Action Cluster -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<!-- Primary Warm Toffee Bronze CTA -->
+<!-- Secondary Frosted Glass CTA -->
+</div>
+</div>
+<!-- Top Right: Interactive 360° Drag Cue / Spatial Orbit Indicator -->
+<div class="lg:col-span-4 flex lg:justify-end">
+</div>
+</div>
+<!-- Middle Floating Zone: Recipe Dissection HUD & Specimen Insights -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-center py-space-md pointer-events-none">
+<!-- Left HUD: Signature Recipe Breakdown Card -->
+<div class="lg:col-span-4 pointer-events-auto">
+</div>
+<!-- Center Spacer allowing 3D Specimen full dominance -->
+<div class="lg:col-span-5 h-[38vh] md:h-20 lg:h-96 pointer-events-none"></div>
+<!-- Right HUD: Live Nutrition & Texture Metrics -->
+<div class="lg:col-span-3 pointer-events-auto flex flex-col gap-3 justify-end items-stretch md:items-end">
+<!-- Live Batch Timer Card -->
+<div class="hero-closing-card hidden md:flex w-full max-w-xs p-4 rounded-xl bg-surface-container-lowest/85 backdrop-blur-md shadow-lg flex-col gap-3 border border-outline-variant/30"><div class="flex items-center justify-between pb-1 border-b border-outline-variant/30"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[16px]">schedule</span><span class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold">Closing Time</span></div><span class="font-label-sm text-[10px] text-secondary font-bold tracking-widest uppercase">Daily Bake</span></div><div class="grid grid-cols-3 gap-2 text-center py-1 bg-surface-container/60 rounded-lg px-2"><div class="flex flex-col items-center"><span class="font-headline-sm text-headline-sm text-primary font-bold leading-none">01</span><span class="font-label-sm text-[9px] uppercase tracking-widest text-on-surface-variant font-semibold mt-0.5">Hours</span></div><div class="flex flex-col items-center"><span class="font-headline-sm text-headline-sm text-primary font-bold leading-none">42</span><span class="font-label-sm text-[9px] uppercase tracking-widest text-on-surface-variant font-semibold mt-0.5">Mins</span></div><div class="flex flex-col items-center"><span class="font-headline-sm text-headline-sm text-secondary font-bold leading-none" id="countdownTimer">39</span><span class="font-label-sm text-[9px] uppercase tracking-widest text-on-surface-variant font-semibold mt-0.5">Secs</span></div></div></div>
+<!-- Flavor Notes Micro Radar -->
+</div>
+</div>
+<!-- Bottom Row: Live Tasting Room Flavor Selector & Trust Badges -->
+<div class="flex flex-col gap-space-sm pt-space-xs pb-space-xs pointer-events-none">
+<!-- Horizontal Flavor Strip Selector -->
+<!-- Trust Badges & Chef's Serving Tip -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm pt-space-xs text-on-surface-variant font-body-sm text-body-sm pointer-events-none">
+<!-- Trust 1 -->
+<!-- Trust 2: Rating -->
+<!-- Trust 3: Warm Serving Tip -->
+</div>
+</div>
+</div>
+<!-- Interactive Logic -->
+<script>
+    (function initBrookieShowcase() {
+      let currentQty = 2;
+      let activePrice = 4.50;
+      let activeFlavorTitle = "The Original Sea Salt";
+
+      const qtyValEl = document.getElementById("qtyVal");
+      const priceDisplayEl = document.getElementById("priceDisplay");
+      const qtyInc = document.getElementById("qtyInc");
+      const qtyDec = document.getElementById("qtyDec");
+      const addToBoxBtn = document.getElementById("addToBoxBtn");
+      const toast = document.getElementById("quickToast");
+      const toastMsg = document.getElementById("toastMsg");
+      const flavorTabs = document.querySelectorAll(".flavor-tab");
+
+      function updatePricing() {
+        if (!qtyValEl || !priceDisplayEl) return;
+        const total = (currentQty * activePrice).toFixed(2);
+        qtyValEl.textContent = currentQty;
+        priceDisplayEl.textContent = `($${total})`;
+      }
+
+      if (qtyInc) {
+        qtyInc.addEventListener("click", () => {
+          if (currentQty < 24) {
+            currentQty += 1;
+            updatePricing();
+          }
+        });
+      }
+
+      if (qtyDec) {
+        qtyDec.addEventListener("click", () => {
+          if (currentQty > 1) {
+            currentQty -= 1;
+            updatePricing();
+          }
+        });
+      }
+
+      flavorTabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          flavorTabs.forEach((t) => {
+            t.classList.remove("active", "bg-primary", "text-on-primary", "shadow-md");
+            t.classList.add("bg-surface-container", "text-primary");
+            const dot = t.querySelector("span:first-child");
+            if (dot) dot.classList.replace("bg-secondary-container", "bg-transparent");
+            const sub = t.querySelector("span.text-primary-fixed");
+            if (sub) {
+              sub.classList.remove("text-primary-fixed");
+              sub.classList.add("text-outline");
+            }
+          });
+
+          tab.classList.remove("bg-surface-container", "text-primary");
+          tab.classList.add("active", "bg-primary", "text-on-primary", "shadow-md");
+          const dot = tab.querySelector("span:first-child");
+          if (dot) dot.classList.replace("bg-transparent", "bg-secondary-container");
+          const priceSpan = tab.querySelector(".font-label-sm");
+          if (priceSpan) {
+            priceSpan.classList.remove("text-outline");
+            priceSpan.classList.add("text-primary-fixed");
+          }
+
+          activePrice = parseFloat(tab.dataset.price);
+          activeFlavorTitle = tab.querySelector(".font-label-md").textContent.trim();
+          updatePricing();
+        });
+      });
+
+      if (addToBoxBtn && toast && toastMsg) {
+        addToBoxBtn.addEventListener("click", () => {
+          toastMsg.textContent = `${currentQty}x ${activeFlavorTitle} Brookie`;
+          toast.classList.remove("opacity-0", "translate-y-6", "pointer-events-none");
+          toast.classList.add("opacity-100", "translate-y-0");
+
+          setTimeout(() => {
+            toast.classList.add("opacity-0", "translate-y-6", "pointer-events-none");
+            toast.classList.remove("opacity-100", "translate-y-0");
+          }, 3200);
+        });
+      }
+
+      // Subtle dynamic countdown for bakery timer
+      let seconds = 18;
+      const countdownEl = document.getElementById("countdownTimer");
+      setInterval(() => {
+        if (seconds > 0) {
+          seconds--;
+        } else {
+          seconds = 59;
+        }
+        if (countdownEl) {
+          countdownEl.textContent = seconds < 10 ? '0' + seconds : seconds;
+        }
+      }, 1000);
+    })();
+  </script>
+</div>
+
+<!-- ═══════════════════ MENU & FLAVORS SECTION ═══════════════════ -->
+<section id="menu-flavors" class="w-full bg-surface relative overflow-hidden">
+  <!-- Ambient Glow -->
+  <div class="absolute top-12 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-secondary-fixed/40 rounded-full blur-[120px] pointer-events-none -z-10"></div>
+
+  <!-- Section Header -->
+  <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin lg:px-margin-desktop pt-10 md:pt-16 pb-8 text-center flex flex-col items-center">
+    <h2 class="font-headline-lg text-headline-lg md:text-[56px] md:leading-[64px] text-primary tracking-tight font-normal mb-4">Menu &amp; Flavors</h2>
+
+    <!-- Category Filters -->
+    <div class="flex flex-wrap items-center justify-center gap-2 mt-6 md:mt-8">
+      <button class="category-btn px-4 sm:px-6 py-2.5 rounded-full font-label-md text-label-md shadow-sm transition-all duration-200 bg-primary text-on-primary" onclick="filterCategory('all', this)">All Items</button>
+      <button class="category-btn px-6 py-2.5 rounded-full font-label-md text-label-md shadow-sm transition-all duration-200 bg-surface-container text-on-surface-variant hover:bg-surface-container-high" onclick="filterCategory('brookies', this)">Brookies</button>
+      <button class="category-btn px-6 py-2.5 rounded-full font-label-md text-label-md shadow-sm transition-all duration-200 bg-surface-container text-on-surface-variant hover:bg-surface-container-high" onclick="filterCategory('brownies', this)">Brownies</button>
+      <button class="category-btn px-6 py-2.5 rounded-full font-label-md text-label-md shadow-sm transition-all duration-200 bg-surface-container text-on-surface-variant hover:bg-surface-container-high" onclick="filterCategory('cookies', this)">Cookies</button>
+    </div>
+  </div>
+
+  <!-- Product Grid -->
+  <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin lg:px-margin-desktop py-6 pb-28">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-gutter-desktop" id="productGrid">
+      <!-- Cards rendered dynamically by renderMenuGrid() -->
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="fixed top-24 right-6 z-50 transform translate-y-[-20px] opacity-0 pointer-events-none transition-all duration-300 bg-surface-container-lowest text-on-surface px-5 py-3.5 rounded-xl shadow-[0_12px_32px_rgba(42,27,20,0.15)] flex items-center gap-3" id="menuToast">
+    <div class="w-7 h-7 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary">
+      <span class="material-symbols-outlined text-[18px]">check</span>
+    </div>
+    <div class="flex flex-col">
+      <span class="font-label-md text-label-md font-bold text-primary" id="menuToastTitle">Item Added</span>
+      <span class="font-body-sm text-body-sm text-on-surface-variant" id="menuToastMessage">Added to your artisanal selection box.</span>
+    </div>
+  </div>
+
+  <script>
+    function filterCategory(category, btn) {
+      document.querySelectorAll('.category-btn').forEach(b => {
+        b.classList.remove('bg-primary', 'text-on-primary');
+        b.classList.add('bg-surface-container', 'text-on-surface-variant');
+      });
+      btn.classList.add('bg-primary', 'text-on-primary');
+      btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      document.querySelectorAll('.product-card').forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    function addToTastingBox(itemName, price, buttonElem) {
+      const orig = buttonElem.innerHTML;
+      buttonElem.innerHTML = '<span class="material-symbols-outlined text-[18px]">check_circle</span><span>Added!</span>';
+      buttonElem.classList.add('bg-secondary');
+      setTimeout(() => { buttonElem.innerHTML = orig; buttonElem.classList.remove('bg-secondary'); }, 1100);
+
+      const toast = document.getElementById('menuToast');
+      document.getElementById('menuToastTitle').textContent = itemName;
+      document.getElementById('menuToastMessage').textContent = 'Added to your tasting box (₹' + price + ')';
+      toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-[-20px]');
+      toast.classList.add('opacity-100', 'translate-y-0');
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-[-20px]');
+        toast.classList.remove('opacity-100', 'translate-y-0');
+      }, 2600);
+    }
+  </script>
+</section>
+
+<!-- ═══════════════════ FIND US / LOCATION SECTION ═══════════════════ -->
+<section id="find-us" class="w-full bg-surface-container-low relative overflow-hidden">
+  <!-- Ambient glow -->
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-secondary-fixed/30 rounded-full blur-[100px] pointer-events-none -z-10"></div>
+
+  <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin lg:px-margin-desktop py-10 md:py-16 pb-16 md:pb-20">
+    <!-- Section Header -->
+    <div class="text-center mb-10 flex flex-col items-center">
+      <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary-fixed/60 text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-widest mb-4 border border-secondary-fixed/40">
+        <span class="material-symbols-outlined text-[14px]">location_on</span>
+        Visit Us
+      </span>
+      <h2 class="font-headline-lg text-headline-lg md:text-[48px] md:leading-[56px] text-primary tracking-tight font-normal mb-3">Find Us</h2>
+      <p class="font-body-md text-body-md text-on-surface-variant max-w-md">Come visit our home bakery. Freshly baked every day, made with love.</p>
+    </div>
+
+    <!-- Map + Info Card -->
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-stretch">
+
+      <!-- Map Embed -->
+      <div class="lg:col-span-3 rounded-2xl overflow-hidden shadow-[0_8px_32px_rgba(42,27,20,0.12)] border border-outline-variant/30 min-h-[240px] sm:min-h-[340px]">
+        <iframe
+          src="https://maps.google.com/maps?q=Pavoorchatram,+Tamil+Nadu+627808&t=m&z=15&output=embed&iwloc=near"
+          width="100%"
+          height="100%"
+          style="border:0; min-height:240px; height:100%; display:block;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Brownies &amp; Brookiess Location">
+        </iframe>
+      </div>
+
+      <!-- Info Card -->
+      <div class="lg:col-span-2 flex flex-col gap-5">
+
+        <!-- Address Card -->
+        <div class="flex-1 bg-surface-container-lowest rounded-2xl shadow-[0_4px_24px_rgba(42,27,20,0.07)] border border-outline-variant/20 p-5 sm:p-7 flex flex-col gap-5">
+          <div class="flex items-start gap-4">
+            <div class="w-11 h-11 rounded-xl bg-secondary-fixed/60 flex items-center justify-center flex-shrink-0">
+              <span class="material-symbols-outlined text-on-secondary-fixed text-[22px]" style="font-variation-settings:'FILL' 1">location_on</span>
+            </div>
+            <div>
+              <p class="font-label-lg text-label-lg text-primary uppercase tracking-wider mb-1">Address</p>
+              <p class="font-body-md text-body-md text-on-surface leading-relaxed">Kadayam Road, Pavoorchatram,<br>Tamil Nadu – 627 808</p>
+            </div>
+          </div>
+
+          <div class="w-full h-px bg-outline-variant/30"></div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-11 h-11 rounded-xl bg-primary-fixed/60 flex items-center justify-center flex-shrink-0">
+              <span class="material-symbols-outlined text-on-primary-fixed text-[22px]" style="font-variation-settings:'FILL' 1">schedule</span>
+            </div>
+            <div>
+              <p class="font-label-lg text-label-lg text-primary uppercase tracking-wider mb-1">Baking Hours</p>
+              <p class="font-body-md text-body-md text-on-surface leading-relaxed">Mon – Sat: 8:00 AM – 8:00 PM<br>Sunday: 10:00 AM – 6:00 PM</p>
+            </div>
+          </div>
+
+          <div class="w-full h-px bg-outline-variant/30"></div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-11 h-11 rounded-xl bg-tertiary-fixed/40 flex items-center justify-center flex-shrink-0">
+              <span class="material-symbols-outlined text-on-tertiary-fixed text-[22px]" style="font-variation-settings:'FILL' 1">phone</span>
+            </div>
+            <div>
+              <p class="font-label-lg text-label-lg text-primary uppercase tracking-wider mb-1">Call / WhatsApp</p>
+              <a href="tel:+919994445400" class="font-body-md text-body-md text-secondary hover:text-primary transition-colors">+91 99944 45400</a>
+            </div>
+          </div>
+
+          <!-- Directions Button -->
+          <a
+            href="https://maps.app.goo.gl/jDacYbmBoWCj4ejq5"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-2 w-full py-3.5 rounded-xl bg-primary hover:bg-tertiary text-on-primary font-label-lg text-label-lg text-center transition-all shadow-md flex items-center justify-center gap-2 group"
+          >
+            <span class="material-symbols-outlined text-[18px] group-hover:translate-x-0.5 transition-transform">directions</span>
+            Get Directions
+          </a>
+
+          <!-- Open in Maps subtle link -->
+          <a
+            href="https://maps.app.goo.gl/jDacYbmBoWCj4ejq5"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-center font-label-sm text-label-sm text-on-surface-variant hover:text-secondary transition-colors flex items-center justify-center gap-1"
+          >
+            <span class="material-symbols-outlined text-[13px]">open_in_new</span>
+            Open in Google Maps
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main><footer class="w-full bg-surface-container-low text-on-surface-variant shadow-[0_-1px_12px_rgba(42,27,20,0.03)]"></footer>
+
+
+
+<!-- ═══════ SEARCH MODAL ═══════ -->
+<div id="searchModal" class="fixed inset-0 z-[100] flex items-start justify-center pt-24 px-4 hidden" onclick="if(event.target===this)closeSearch()">
+  <div class="absolute inset-0 bg-primary/30 backdrop-blur-sm"></div>
+  <div class="relative w-full max-w-2xl bg-surface-container-lowest rounded-2xl shadow-[0_24px_64px_rgba(42,27,20,0.2)] overflow-hidden">
+    <div class="flex items-center gap-3 px-5 py-4 border-b border-outline-variant/30">
+      <span class="material-symbols-outlined text-[22px] text-secondary">search</span>
+      <input autofocus class="flex-1 bg-transparent font-body-lg text-body-lg text-on-surface placeholder:text-on-surface-variant outline-none" id="searchInput" oninput="runSearch(this.value)" placeholder="Search brookies, brownies, cookies…" type="text">
+      <button class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-surface-container transition-all" onclick="closeSearch()" type="button"><span class="material-symbols-outlined text-[20px] text-on-surface-variant">close</span></button>
+    </div>
+    <div class="p-4 max-h-[60vh] overflow-y-auto" id="searchResults">
+      <p class="font-body-sm text-body-sm text-on-surface-variant text-center py-6">Start typing to search our menu…</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ CART PANEL ═══════ -->
+<div id="cartOverlay" class="fixed inset-0 z-[100] hidden" onclick="if(event.target===this)closeCart()">
+  <div class="absolute inset-0 bg-primary/20 backdrop-blur-sm"></div>
+  <div class="absolute top-0 right-0 h-full w-full max-w-md bg-surface-container-lowest shadow-[-8px_0_48px_rgba(42,27,20,0.15)] flex flex-col" id="cartPanel" style="transform:translateX(100%);transition:transform 0.35s cubic-bezier(.4,0,.2,1)">
+    <!-- Cart Header -->
+    <div class="flex items-center justify-between px-6 py-5 border-b border-outline-variant/30">
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-[22px] text-secondary">shopping_bag</span>
+        <span class="font-headline-sm text-headline-sm text-primary">Your Box</span>
+        <span class="w-5 h-5 rounded-full bg-secondary text-on-secondary font-label-sm text-[10px] flex items-center justify-center font-bold" id="cartCount">0</span>
+      </div>
+      <button class="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-container transition-all" onclick="closeCart()" type="button"><span class="material-symbols-outlined text-[20px] text-on-surface-variant">close</span></button>
+    </div>
+    <!-- Cart Items -->
+    <div class="flex-1 overflow-y-auto px-6 py-4" id="cartItems">
+      <div class="flex flex-col items-center justify-center h-full py-16 text-center" id="cartEmpty">
+        <span class="material-symbols-outlined text-[48px] text-outline mb-3">shopping_bag</span>
+        <p class="font-body-md text-body-md text-on-surface-variant">Your box is empty.<br>Add some treats!</p>
+      </div>
+    </div>
+    <!-- Cart Footer -->
+    <div class="px-6 py-5 border-t border-outline-variant/30 hidden" id="cartFooter">
+      <div class="flex items-center justify-between mb-4">
+        <span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Total</span>
+        <span class="font-headline-sm text-headline-sm text-primary" id="cartTotal">&#8377;0</span>
+      </div>
+      <button class="w-full py-3.5 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg hover:bg-tertiary transition-all shadow-md flex items-center justify-center gap-2" onclick="checkout()" type="button">
+        <span class="material-symbols-outlined text-[18px]">local_fire_department</span> Checkout
+      </button>
+      <button class="w-full mt-2 py-2.5 rounded-xl bg-surface-container text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high transition-all" onclick="clearCart()" type="button">Clear Box</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ CHECKOUT / CUSTOMER DETAILS ═══════ -->
+<div id="checkoutModal" class="fixed inset-0 z-[110] flex items-center justify-center px-4 py-8 hidden" onclick="if(event.target===this)closeCheckout()">
+  <div class="absolute inset-0 bg-primary/30 backdrop-blur-sm"></div>
+  <div class="relative w-full max-w-md bg-surface-container-lowest rounded-2xl shadow-[0_24px_64px_rgba(42,27,20,0.22)] overflow-hidden max-h-[90vh] flex flex-col">
+    <div class="flex items-center justify-between px-6 py-4 border-b border-outline-variant/30">
+      <div>
+        <p class="font-headline-sm text-headline-sm text-primary">Your details</p>
+        <p class="font-body-sm text-body-sm text-on-surface-variant">We’ll confirm your order and bake it fresh.</p>
+      </div>
+      <button class="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-surface-container transition-all" onclick="closeCheckout()" type="button"><span class="material-symbols-outlined text-[20px] text-on-surface-variant">close</span></button>
+    </div>
+    <form class="p-6 overflow-y-auto" id="checkoutForm" onsubmit="submitOrder(event)">
+      <div class="mb-4 p-3 rounded-xl bg-surface-container">
+        <p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-1">Order total</p>
+        <p class="font-headline-sm text-headline-sm text-primary" id="checkoutTotal">₹0</p>
+        <p class="font-body-sm text-body-sm text-on-surface-variant mt-1" id="checkoutItemsSummary"></p>
+      </div>
+      <label class="block font-label-md text-label-md text-on-surface-variant mb-1" for="orderName">Name</label>
+      <input required class="w-full px-4 py-2.5 rounded-lg bg-surface-container border border-outline-variant/50 font-body-md text-body-md text-on-surface outline-none focus:border-secondary transition mb-3" id="orderName" name="name" placeholder="Your full name" type="text" autocomplete="name">
+      <label class="block font-label-md text-label-md text-on-surface-variant mb-1" for="orderCity">Village or city</label>
+      <input required class="w-full px-4 py-2.5 rounded-lg bg-surface-container border border-outline-variant/50 font-body-md text-body-md text-on-surface outline-none focus:border-secondary transition mb-3" id="orderCity" name="village" placeholder="Village or city name" type="text" autocomplete="address-level2">
+      <label class="block font-label-md text-label-md text-on-surface-variant mb-1" for="orderPhone">Phone number</label>
+      <input required class="w-full px-4 py-2.5 rounded-lg bg-surface-container border border-outline-variant/50 font-body-md text-body-md text-on-surface outline-none focus:border-secondary transition mb-3" id="orderPhone" name="phone" placeholder="10-digit mobile number" type="tel" inputmode="tel" autocomplete="tel" pattern="[0-9+\s-]{10,15}">
+      <label class="block font-label-md text-label-md text-on-surface-variant mb-1" for="orderEmail">Email</label>
+      <input required class="w-full px-4 py-2.5 rounded-lg bg-surface-container border border-outline-variant/50 font-body-md text-body-md text-on-surface outline-none focus:border-secondary transition mb-5" id="orderEmail" name="email" placeholder="you@email.com" type="email" autocomplete="email">
+      <p id="checkoutError" class="font-body-sm text-body-sm text-error mt-0 mb-3 text-center hidden"></p>
+      <p id="checkoutSuccess" class="font-body-sm text-body-sm text-secondary mt-0 mb-3 text-center hidden"></p>
+      <button class="w-full py-3.5 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg hover:bg-tertiary transition-all shadow-md flex items-center justify-center gap-2" id="placeOrderBtn" type="submit">
+        <span class="material-symbols-outlined text-[18px]">check_circle</span> Place Order
+      </button>
+      <p class="font-body-sm text-body-sm text-on-surface-variant text-center mt-4">
+        <span class="material-symbols-outlined text-[13px] align-middle">lock</span>
+        Your order is securely saved to our Google Sheet.
+      </p>
+    </form>
+  </div>
+</div>
+<!-- Google Sheets integration is handled via fetch() in submitOrder() -->
+
+<!-- ═══════ LOGIN / REGISTER MODAL ═══════ -->
+<div id="loginModal" class="fixed inset-0 z-[100] flex items-center justify-center px-4 hidden" onclick="if(event.target===this)closeLogin()">
+  <div class="absolute inset-0 bg-primary/30 backdrop-blur-sm"></div>
+  <div class="relative w-full max-w-sm bg-surface-container-lowest rounded-2xl shadow-[0_24px_64px_rgba(42,27,20,0.22)] overflow-hidden">
+    <!-- Tabs -->
+    <div class="flex border-b border-outline-variant/30">
+      <button class="flex-1 py-4 font-label-lg text-label-lg text-primary border-b-2 border-secondary" id="tabLogin" onclick="switchTab('login')" type="button">Sign In</button>
+      <button class="flex-1 py-4 font-label-lg text-label-lg text-on-surface-variant" id="tabRegister" onclick="switchTab('register')" type="button">Register</button>
+      <button class="w-10 flex items-center justify-center hover:bg-surface-container transition-all" onclick="closeLogin()" type="button"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">close</span></button>
+    </div>
+    <!-- Login Form -->
+    <div class="p-6" id="formLogin">
+      <p class="font-headline-sm text-headline-sm text-primary mb-1">Welcome back!</p>
+      <p class="font-body-sm text-body-sm text-on-surface-variant mb-5">Sign in to your B&amp;B account.</p>
+      <label class="block font-label-md text-label-md text-on-surface-variant mb-1" for="loginEmail">Email</label>
+      <input class="w-full px-4 py-2.5 rounded-lg bg-surface-container border border-outline-variant/50 font-body-md text-body-md text-on-surface outline-none focus:border-secondary transition mb-3" id="loginEmail" placeholder="you@email.com" type="email">
+      <label class="block font-label-md text-label-md text-on-surface-variant mb-1" for="loginPwd">Password</label>
+      <input class="w-full px-4 py-2.5 rounded-lg bg-surface-container border border-outline-variant/50 font-body-md text-body-md text-on-surface outline-none focus:border-secondary transition mb-5" id="loginPwd" placeholder="••••••••" type="password">
+      <p class="text-right font-label-sm text-label-sm text-secondary cursor-pointer hover:underline mb-4" onclick="forgotPassword()">Forgot password?</p>
+      <button class="w-full py-3 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg hover:bg-tertiary transition-all shadow-md" onclick="doLogin()" type="button">Sign In</button>
+      <p id="loginError" class="font-body-sm text-body-sm text-error mt-3 text-center hidden"></p>
+    </div>
+    <!-- Register Form -->
+    <div class="p-6 hidden" id="formRegister">
+      <p class="font-headline-sm text-headline-sm text-primary mb-1">Create account</p>
+      <p class="font-body-sm text-body-sm text-on-surface-variant mb-5">Join the B&amp;B family today.</p>
+      <label class="block font-label-md text-label-md text-on-surface-variant mb-1" for="regName">Name</label>
+      <input class="w-full px-4 py-2.5 rounded-lg bg-surface-container border border-outline-variant/50 font-body-md text-body-md text-on-surface outline-none focus:border-secondary transition mb-3" id="regName" placeholder="Your name" type="text">
+      <label class="block font-label-md text-label-md text-on-surface-variant mb-1" for="regEmail">Email</label>
+      <input class="w-full px-4 py-2.5 rounded-lg bg-surface-container border border-outline-variant/50 font-body-md text-body-md text-on-surface outline-none focus:border-secondary transition mb-3" id="regEmail" placeholder="you@email.com" type="email">
+      <label class="block font-label-md text-label-md text-on-surface-variant mb-1" for="regPwd">Password</label>
+      <input class="w-full px-4 py-2.5 rounded-lg bg-surface-container border border-outline-variant/50 font-body-md text-body-md text-on-surface outline-none focus:border-secondary transition mb-5" id="regPwd" placeholder="Min. 6 characters" type="password">
+      <button class="w-full py-3 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg hover:bg-tertiary transition-all shadow-md" onclick="doRegister()" type="button">Create Account</button>
+      <p id="regError" class="font-body-sm text-body-sm text-error mt-3 text-center hidden"></p>
+    </div>
+    <!-- Logged-in view -->
+    <div class="p-6 hidden" id="formProfile">
+      <div class="flex items-center gap-4 mb-6">
+        <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[24px]">person</span></div>
+        <div><p class="font-headline-sm text-headline-sm text-primary" id="profileName">Baker</p><p class="font-body-sm text-body-sm text-on-surface-variant" id="profileEmail"></p></div>
+      </div>
+      <div class="space-y-2 mb-6">
+        <div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container hover:bg-surface-container-high cursor-pointer transition-all">
+          <span class="material-symbols-outlined text-[20px] text-secondary">receipt_long</span>
+          <span class="font-label-md text-label-md text-on-surface">My Orders</span>
+        </div>
+        <div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container hover:bg-surface-container-high cursor-pointer transition-all">
+          <span class="material-symbols-outlined text-[20px] text-secondary">favorite</span>
+          <span class="font-label-md text-label-md text-on-surface">Saved Items</span>
+        </div>
+      </div>
+      <button class="w-full py-2.5 rounded-xl bg-surface-container text-on-surface-variant font-label-md text-label-md hover:bg-error/10 hover:text-error transition-all" onclick="doLogout()" type="button">Sign Out</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ ADMIN PANEL MODAL (Secret — access via brownies@gmail.com / kiwii) ═══════ -->
+<div id="adminModal" class="fixed inset-0 z-[200] hidden" style="background:rgba(10,6,4,0.92);backdrop-filter:blur(12px)">
+  <div class="h-full overflow-y-auto">
+    <div class="max-w-2xl mx-auto px-4 py-8 pb-20">
+
+      <!-- Header -->
+      <div class="flex items-center justify-between mb-8">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background:linear-gradient(135deg,#fead4f,#895200)">
+            <span class="material-symbols-outlined text-white text-[20px]" style="font-variation-settings:'FILL' 1">admin_panel_settings</span>
+          </div>
+          <div>
+            <p class="font-headline-sm text-[20px] font-semibold" style="color:#ffecd6">Admin Panel</p>
+            <p class="font-label-sm text-label-sm" style="color:#b09070">Brownies &amp; Brookiess — Menu Editor</p>
+          </div>
+        </div>
+        <button onclick="closeAdminPanel()" class="flex items-center gap-2 px-4 py-2 rounded-xl font-label-md transition-all" style="background:rgba(255,255,255,0.07);color:#b09070" onmouseover="this.style.background='rgba(255,255,255,0.12)'" onmouseout="this.style.background='rgba(255,255,255,0.07)'">
+          <span class="material-symbols-outlined text-[18px]">close</span> Close
+        </button>
+      </div>
+
+      <!-- Current Menu Items List -->
+      <div class="rounded-2xl p-5 mb-8" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08)">
+        <div class="flex items-center justify-between mb-4">
+          <p class="font-label-lg text-label-lg uppercase tracking-wider" style="color:#ffecd6">Current Menu</p>
+          <span class="font-label-sm text-label-sm px-3 py-1 rounded-full" style="background:rgba(254,173,79,0.15);color:#fead4f">Live on site</span>
+        </div>
+        <div id="adminItemList">
+          <!-- populated by renderAdminList() -->
+        </div>
+      </div>
+
+      <!-- Add / Edit Form -->
+      <div id="adminForm" class="rounded-2xl p-6" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08)">
+        <p id="adminFormTitle" class="font-headline-sm text-[18px] font-semibold mb-5" style="color:#ffecd6">Add New Item</p>
+
+        <!-- Image: URL or Upload -->
+        <label class="block font-label-md text-label-md mb-2" style="color:#b09070">Item Image</label>
+
+        <!-- Tab switcher -->
+        <div class="flex gap-1 mb-3 p-1 rounded-xl" style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08)">
+          <button id="imgTabUrl" type="button" onclick="adminImgTab('url')"
+            class="flex-1 py-1.5 rounded-lg font-label-md text-label-md transition-all"
+            style="background:rgba(254,173,79,0.25);color:#fead4f">
+            <span class="material-symbols-outlined text-[15px] align-middle mr-1">link</span>Paste URL
+          </button>
+          <button id="imgTabFile" type="button" onclick="adminImgTab('file')"
+            class="flex-1 py-1.5 rounded-lg font-label-md text-label-md transition-all"
+            style="background:transparent;color:#b09070">
+            <span class="material-symbols-outlined text-[15px] align-middle mr-1">upload</span>Upload from Device
+          </button>
+        </div>
+
+        <!-- URL input pane -->
+        <div id="imgPaneUrl" class="mb-3">
+          <input id="aImage" type="url" placeholder="https://…" oninput="adminPreviewImage()"
+            class="w-full px-4 py-2.5 rounded-xl font-body-md text-body-md outline-none transition"
+            style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);color:#ffecd6">
+        </div>
+
+        <!-- File upload pane (hidden by default) -->
+        <div id="imgPaneFile" class="mb-3" style="display:none">
+          <input id="aImageFile" type="file" accept="image/*" onchange="adminHandleFileUpload(this)" style="display:none">
+          <button type="button" onclick="document.getElementById('aImageFile').click()"
+            class="w-full py-2.5 rounded-xl font-label-md text-label-md flex items-center justify-center gap-2 transition-all"
+            style="background:rgba(255,255,255,0.07);border:2px dashed rgba(254,173,79,0.4);color:#fead4f"
+            onmouseover="this.style.borderColor='rgba(254,173,79,0.8)'" onmouseout="this.style.borderColor='rgba(254,173,79,0.4)'">
+            <span class="material-symbols-outlined text-[20px]">photo_library</span>
+            Choose photo from device
+          </button>
+          <p id="aImageFileName" class="mt-1.5 font-body-sm text-body-sm text-center" style="color:rgba(176,144,112,0.7)">No file selected</p>
+        </div>
+
+        <!-- Shared preview -->
+        <div class="mb-4 rounded-xl overflow-hidden" style="max-height:180px">
+          <img id="aImagePreview" src="" alt="Preview" class="w-full object-cover" style="display:none;max-height:180px" onerror="this.style.display='none'" onload="this.style.display='block'">
+        </div>
+
+        <!-- Name -->
+        <label class="block font-label-md text-label-md mb-1" style="color:#b09070">Item Name *</label>
+        <input id="aName" type="text" placeholder="e.g. Caramel Sea Salt"
+          class="w-full px-4 py-2.5 rounded-xl font-body-md text-body-md outline-none transition mb-4"
+          style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);color:#ffecd6">
+
+        <!-- Category + Price side by side -->
+        <div class="grid grid-cols-2 gap-3 mb-4">
+          <div>
+            <label class="block font-label-md text-label-md mb-1" style="color:#b09070">Category *</label>
+            <select id="aCategory"
+              class="w-full px-4 py-2.5 rounded-xl font-body-md text-body-md outline-none transition"
+              style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);color:#ffecd6">
+              <option value="brookies">Brookies</option>
+              <option value="brownies">Brownies</option>
+              <option value="cookies">Cookies</option>
+            </select>
+          </div>
+          <div>
+            <label class="block font-label-md text-label-md mb-1" style="color:#b09070">Price (₹) *</label>
+            <input id="aPrice" type="number" min="1" placeholder="e.g. 180"
+              class="w-full px-4 py-2.5 rounded-xl font-body-md text-body-md outline-none transition"
+              style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);color:#ffecd6">
+          </div>
+        </div>
+
+        <!-- Rating + Badge side by side -->
+        <div class="grid grid-cols-2 gap-3 mb-4">
+          <div>
+            <label class="block font-label-md text-label-md mb-1" style="color:#b09070">Rating (e.g. 4.9)</label>
+            <input id="aRating" type="text" placeholder="4.9"
+              class="w-full px-4 py-2.5 rounded-xl font-body-md text-body-md outline-none transition"
+              style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);color:#ffecd6">
+          </div>
+          <div>
+            <label class="block font-label-md text-label-md mb-1" style="color:#b09070">Badge (e.g. New)</label>
+            <input id="aBadge" type="text" placeholder="Best Seller, New…"
+              class="w-full px-4 py-2.5 rounded-xl font-body-md text-body-md outline-none transition"
+              style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);color:#ffecd6">
+          </div>
+        </div>
+
+        <!-- Description -->
+        <label class="block font-label-md text-label-md mb-1" style="color:#b09070">Description</label>
+        <textarea id="aDesc" rows="3" placeholder="Short description shown on the card…"
+          class="w-full px-4 py-2.5 rounded-xl font-body-md text-body-md outline-none transition resize-none mb-5"
+          style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);color:#ffecd6"></textarea>
+
+        <!-- Error -->
+        <p id="adminSaveError" class="font-body-sm text-body-sm mb-3 hidden" style="color:#ff6b6b"></p>
+
+        <!-- Buttons -->
+        <div class="flex gap-3">
+          <button id="adminSaveBtn" onclick="adminSaveItem()" type="button"
+            class="flex-1 py-3 rounded-xl font-label-lg text-label-lg transition-all"
+            style="background:linear-gradient(135deg,#fead4f,#895200);color:#fff">
+            Save Item
+          </button>
+          <button onclick="adminClearForm()" type="button"
+            class="px-5 py-3 rounded-xl font-label-md text-label-md transition-all"
+            style="background:rgba(255,255,255,0.07);color:#b09070"
+            onmouseover="this.style.background='rgba(255,255,255,0.12)'" onmouseout="this.style.background='rgba(255,255,255,0.07)'">
+            Clear
+          </button>
+        </div>
+        <p class="font-label-sm text-label-sm mt-4 text-center" style="color:rgba(176,144,112,0.6)">
+          Changes are saved instantly and appear on the public menu.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ FIREBASE REALTIME DATABASE SDK ═══════ -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/13.0.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/13.0.0/firebase-analytics.js";
+  import { getDatabase, ref, set, get, onValue, remove } from "https://www.gstatic.com/firebasejs/13.0.0/firebase-database.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyA6rp5ESswk1DgQfR9c4VhhkXb_mGUcj_E",
+    authDomain: "browniecbrookiess.firebaseapp.com",
+    databaseURL: "https://browniecbrookiess-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "browniecbrookiess",
+    storageBucket: "browniecbrookiess.firebasestorage.app",
+    messagingSenderId: "8531200466",
+    appId: "1:8531200466:web:24e2afd07f8aef713da00b",
+    measurementId: "G-4E4CLQ8L2K"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+  const rtdb = getDatabase(app);
+
+  // Expose to global non-module scripts
+  window.firebaseRTDB = { db: rtdb, ref, set, get, onValue, remove };
+
+  // Fire sync after page scripts are ready
+  window.addEventListener('load', () => {
+    if (typeof window.initFirebaseMenuSync === 'function') {
+      window.initFirebaseMenuSync();
+    }
+  });
+</script>
+
+<!-- ═══════ GLOBAL WORKING JS ═══════ -->
+<script>
+// ── Admin credentials (secret) ─────────────────────
+const ADMIN_EMAIL = 'brownies@gmail.com';
+const ADMIN_PWD   = 'kiwii';
+
+// ── Default menu items (used if localStorage is empty) ─
+const DEFAULT_MENU_ITEMS = [
+  {id:'item_1', name:'The Original Sea Salt', category:'brookies', price:180, rating:'4.9', badge:'Best Seller', description:'Fudgy brownie base topped with golden cookie dough and flaky hand-harvested Maldon sea salt crystals.', image:'https://lh3.googleusercontent.com/aida-public/AB6AXuAChJOxNffiFexFP3Z6MlxPkIsc-0USOMTfuXDUfx5wXSnPHKy7qVbe0hOZ2j7OWv5BKs9zPfx7OZvFKrR1hOuKGbzn1BiWFO-eGUrsx2MP1bJrPB7e65O2HvS9Tw5aSpmdeHk3zq-8pSF4YALcUjDaRkq1R9EaAvH-8PWhLnz9b-sk-WpiHLnWfmFINkTgS22CldUK0mZCmTzfAHWZNHqlvOtT4nfdutAFEPIShsvW00li4LYbrKSXfA'},
+  {id:'item_2', name:'Double Chocolate', category:'brookies', price:200, rating:'4.8', badge:'Fan Fav', description:'Rich dark cocoa brownie meets generous double chocolate chip golden cookie layer with molten core.', image:'https://lh3.googleusercontent.com/aida-public/AB6AXuBEMTjTZU8Cq325TeaFGyesBopAUdDbFzKdOCpsBFIeJkt-tXsNmFYAPFx1nCnH3B61c6AIvPnZauEF16ePN4C8hkcIyNOzLW4g5jLVCxKZVikoONQTY9PqR2TyZI0CmaRxHSZSl0oHQ9-d5hgLz0KLCQ-oFwQgQ_AlPi--fUfBN5jqsS6f1O4ylWZWdGbeZ0Z3RlF2GhxsVOM3W9o0sdyA00YGFHeB1lkLmZyhnI8LyflOvMjGfTCEzg'},
+  {id:'item_3', name:'Nutella Swirl', category:'brookies', price:220, rating:'5.0', badge:'New', description:'Roasted Piedmont hazelnut-cocoa swirl ribboned through a classic brookie with gooey molten pocket.', image:'https://lh3.googleusercontent.com/aida-public/AB6AXuBDlCAnmT_wPmKwepeBtIAcaQA_j7zYLMQ-Y_MChs-d_cm23dnONRdpt5T9OW7_SyHKM3u50aTpnrqh_yLH0r-fInHo9-Vabhnmuhc1TdPKWbUcG2WshEb4IrO_t3yHqpzWHZxLtute_cyZ4UUpg_Wl-PEloaJCrklhSxjw-Xc6YzZyljBKQOtqxL7dVzNZQKsuTuoYRmYri9fL7yQJY7Qy1ARLJJLVJaR7zErX0jfGNOA4Dio4cq8EPw'},
+  {id:'item_4', name:'White Choc Raspberry', category:'brookies', price:210, rating:'4.9', badge:'Chef Special', description:'Tart wild raspberry compote ripples contrasting with creamy caramelized Swiss white chocolate.', image:'https://lh3.googleusercontent.com/aida-public/AB6AXuC_4VjpfFXy0EgUUDSF0aRLJ44VfAYtKBJ45QDHVMulm2n_QWj8T0jwsrC1UxwJ32AWVihk2sS0uZW0iJaMaalpSdikqHvQ65DGB1Hh2ZG61xEdy1v1Mr8JZSllNOIZUb_0uqG1keuAhKuALRzmKaIVg_FcVmDJ0ZM0C2qbWzBxltewlDORhiYZ14xSgdMlJgq7UTsz-1EURNOdy0LM1QPxwVmgxrPq_bqMqGegtunGUIYBnBsDSvzLIg'},
+  {id:'item_5', name:'Espresso Fudge Slab', category:'brownies', price:190, rating:'4.9', badge:'Signature', description:'Bloomed dark roast Arabica espresso deeply infused in 72% Belgian dark chocolate fudge base.', image:'https://lh3.googleusercontent.com/aida-public/AB6AXuD_rNBCWIt4gF6_YvTzwtvaeZZQLUd4TuOzKgsxQIBuU1cK3Ux9BlDrUN04dX52QEZV-wez2yRghhNt09iA1HCm8Cp6Q4g83oCQ6_Fa0MV2KJMnB9VoqLej5u7rR7LJNCUWb5k8wTEHvWLqZBD6i3jhL11Rq9v4Y4xJhXO0fvMwq9GIUFO2EIhY_ZACzVi4FuVsZXYLLENVNzywXZUANUaUqSYZek3CboFCi1kMptR0IzlsZh5l1ZhybA'},
+  {id:'item_6', name:'Caramel Pecan Crunch', category:'cookies', price:230, rating:'4.7', badge:'Seasonal', description:'Slow-toasted butter pecans folded into browned butter cookie dough with gooey salted toffee rivers.', image:'https://lh3.googleusercontent.com/aida-public/AB6AXuBi92T5iYZWSYKG6MihkrS5t4cQfG-_UuhWVaGw-NtuXGOoFVnoDgAUhqs8VQbbhtHP_bNYGYm7FTdOkoeM7PvOpkNSGB1a_ZKxzoM7LoxAcz6XXEHkvTEQR7zGHrFrAmAJ9KRMzOG9D4YOUhjIyKxovzTHmGLvubObzQSSlYMgTb2pi25GTlqRVerR4TRQpenJHVsg3p9KQQkjj9BghiXFr32WdCD-nQL3wX3NTkyS_DmwhaSiCSWNYg'},
+  {id:'item_7', name:'Sicilian Pistachio Fudge', category:'brownies', price:240, rating:'4.9', badge:'', description:'Stone-ground Bronte pistachio cream swirled through a dark cacao truffle base with toasted nut topping.', image:'https://lh3.googleusercontent.com/aida-public/AB6AXuDRt9CYvL-2ZucA-mA4lnpOz3yUB3NhIw0Mc7KCtmbXwHnx-dTVaDbhQnSR4rC0sErJMxzvd1jNcA9byqM_wabTkLcSfMvPym_YRs9x8tO3PyZ39UHnZDJDQyHRq_pT8sKPiU4dkS5xS0ahxoRDHQwGQ-jVYIhOu3Gq2BqBmt00LjTkvyBlwcUCu4-rphyDqca87OkzauGQxbQ4yyYOD7HCTbJdT7ky-OJ5BCQO8B_vB_9n6viO14Y8Lg'},
+];
+function getMenuItems(){ return JSON.parse(localStorage.getItem('bb_menu')||'null') || DEFAULT_MENU_ITEMS; }
+function saveMenuItems(items){ localStorage.setItem('bb_menu', JSON.stringify(items)); }
+
+// Build PRODUCTS array dynamically (used by search)
+let PRODUCTS = getMenuItems().map(m=>({name:m.name,category:m.category,price:m.price}));
+
+let cart = [];       // [{name, price, qty}]
+let currentUser = JSON.parse(localStorage.getItem('bb_user') || 'null');
+// Google Apps Script Web App endpoint (deployed, public)
+const ORDER_WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbyxgXITgef938_pirDgxJpOeyXjAKH_GRhb00FlAyOzpA5XEorvAlIKCUW2sqWQ_ivE/exec';
+const ORDER_SHEET_URL = 'https://docs.google.com/spreadsheets/d/1OIcfFUSImMuMg-iUxe_sXR9xygVeRkF7RKrSfJntCKA/edit';
+function getOrderScriptUrl(){
+  return ORDER_WEBAPP_URL;
+}
+function syncSheetConnectBox(){ /* no-op: URL is hardcoded */ }
+
+function toggleMobileNav() {
+  const nav = document.getElementById('mobileNav');
+  const icon = document.getElementById('mobileNavIcon');
+  if (!nav) return;
+  const open = nav.style.display === 'block';
+  nav.style.display = open ? 'none' : 'block';
+  if (icon) icon.textContent = open ? 'menu' : 'close';
+}
+function closeMobileNav() {
+  const nav = document.getElementById('mobileNav');
+  const icon = document.getElementById('mobileNavIcon');
+  if (nav) nav.style.display = 'none';
+  if (icon) icon.textContent = 'menu';
+}
+window.addEventListener('resize', function() {
+  if (window.innerWidth >= 1280) closeMobileNav();
+});
+
+// ── Auth helpers ───────────────────────────────────
+function getUsers(){ return JSON.parse(localStorage.getItem('bb_users')||'[]'); }
+function saveUsers(u){ localStorage.setItem('bb_users', JSON.stringify(u)); }
+function setUser(u){ currentUser=u; localStorage.setItem('bb_user', JSON.stringify(u)); updateProfileBtn(); }
+function clearUser(){ currentUser=null; localStorage.removeItem('bb_user'); updateProfileBtn(); }
+function updateProfileBtn(){
+  const icon = document.getElementById('profileIcon');
+  const btn  = document.getElementById('profileBtn');
+  if(!icon||!btn) return;
+  if(currentUser){
+    btn.classList.add('ring-2','ring-secondary');
+    icon.textContent='person';
+  } else {
+    btn.classList.remove('ring-2','ring-secondary');
+    icon.textContent='person';
+  }
+}
+
+// ── Search ─────────────────────────────────────────
+function openSearch(){
+  document.getElementById('searchModal').classList.remove('hidden');
+  setTimeout(()=>document.getElementById('searchInput').focus(),50);
+}
+function closeSearch(){
+  document.getElementById('searchModal').classList.add('hidden');
+  document.getElementById('searchInput').value='';
+  document.getElementById('searchResults').innerHTML='<p class="font-body-sm text-body-sm text-on-surface-variant text-center py-6">Start typing to search our menu…</p>';
+}
+function runSearch(q){
+  const box = document.getElementById('searchResults');
+  q = q.trim().toLowerCase();
+  if(!q){ box.innerHTML='<p class="font-body-sm text-body-sm text-on-surface-variant text-center py-6">Start typing to search our menu…</p>'; return; }
+  const hits = PRODUCTS.filter(p=>p.name.toLowerCase().includes(q)||p.category.includes(q));
+  if(!hits.length){ box.innerHTML='<p class="font-body-sm text-body-sm text-on-surface-variant text-center py-6">No results found for <strong>"'+q+'"</strong></p>'; return; }
+  box.innerHTML = hits.map(p=>`
+    <div class="flex items-center justify-between px-4 py-3 rounded-xl hover:bg-surface-container transition-all group cursor-pointer" onclick="addToCart('${p.name}',${p.price});closeSearch();">
+      <div>
+        <p class="font-label-lg text-label-lg text-primary group-hover:text-secondary transition-colors">${p.name}</p>
+        <p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">${p.category} &bull; &#8377;${p.price}</p>
+      </div>
+      <span class="material-symbols-outlined text-[20px] text-outline group-hover:text-secondary transition-colors">add_shopping_cart</span>
+    </div>`).join('');
+}
+document.addEventListener('keydown',e=>{ if(e.key==='Escape'){closeSearch();closeCart();closeLogin();closeCheckout();} });
+
+// ── Cart ───────────────────────────────────────────
+function addToCart(name, price){
+  const existing = cart.find(i=>i.name===name);
+  if(existing){ existing.qty++; } else { cart.push({name,price,qty:1}); }
+  renderCart();
+  // toast
+  const toast = document.getElementById('menuToast');
+  document.getElementById('menuToastTitle').textContent = name;
+  document.getElementById('menuToastMessage').textContent = 'Added to your box (₹'+price+')';
+  if(toast){ toast.classList.remove('opacity-0','pointer-events-none','translate-y-[-20px]'); toast.classList.add('opacity-100','translate-y-0'); setTimeout(()=>{ toast.classList.add('opacity-0','pointer-events-none','translate-y-[-20px]'); toast.classList.remove('opacity-100','translate-y-0'); },2400); }
+}
+function removeFromCart(name){
+  cart = cart.filter(i=>i.name!==name);
+  renderCart();
+}
+function changeQty(name, delta){
+  const item = cart.find(i=>i.name===name);
+  if(!item) return;
+  item.qty += delta;
+  if(item.qty<=0) removeFromCart(name); else renderCart();
+}
+function clearCart(){ cart=[]; renderCart(); }
+function renderCart(){
+  const total = cart.reduce((s,i)=>s+i.price*i.qty,0);
+  const count = cart.reduce((s,i)=>s+i.qty,0);
+  // badge
+  const badge = document.getElementById('cartBadge');
+  const ccnt  = document.getElementById('cartCount');
+  if(badge) badge.textContent = count;
+  if(ccnt)  ccnt.textContent  = count;
+  // total
+  const totalEl = document.getElementById('cartTotal');
+  if(totalEl) totalEl.textContent = '₹'+total;
+  // empty / footer
+  const emptyEl  = document.getElementById('cartEmpty');
+  const footerEl = document.getElementById('cartFooter');
+  const itemsEl  = document.getElementById('cartItems');
+  if(!itemsEl) return;
+  if(cart.length===0){
+    if(emptyEl)  emptyEl.classList.remove('hidden');
+    if(footerEl) footerEl.classList.add('hidden');
+    itemsEl.innerHTML = '';
+    const empty = document.createElement('div');
+    empty.id='cartEmpty';
+    empty.className='flex flex-col items-center justify-center h-full py-16 text-center';
+    empty.innerHTML='<span class="material-symbols-outlined text-[48px] text-outline mb-3">shopping_bag</span><p class="font-body-md text-body-md text-on-surface-variant">Your box is empty.<br>Add some treats!</p>';
+    itemsEl.appendChild(empty);
+  } else {
+    itemsEl.innerHTML = cart.map(i=>`
+      <div class="flex items-center gap-3 py-3 border-b border-outline-variant/20">
+        <div class="flex-1">
+          <p class="font-label-md text-label-md text-primary font-semibold">${i.name}</p>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">₹${i.price} each</p>
+        </div>
+        <div class="flex items-center gap-1">
+          <button class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center hover:bg-surface-container-high transition-all" onclick="changeQty('${i.name}',-1)" type="button"><span class="material-symbols-outlined text-[16px]">remove</span></button>
+          <span class="w-7 text-center font-label-md text-label-md text-on-surface">${i.qty}</span>
+          <button class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center hover:bg-surface-container-high transition-all" onclick="changeQty('${i.name}',1)" type="button"><span class="material-symbols-outlined text-[16px]">add</span></button>
+        </div>
+        <div class="w-16 text-right">
+          <p class="font-label-md text-label-md text-primary">₹${i.price*i.qty}</p>
+          <button class="mt-0.5 text-error" onclick="removeFromCart('${i.name}')" type="button"><span class="material-symbols-outlined text-[16px]">delete</span></button>
+        </div>
+      </div>`).join('');
+    if(footerEl) footerEl.classList.remove('hidden');
+  }
+}
+function openCart(){
+  document.getElementById('cartOverlay').classList.remove('hidden');
+  setTimeout(()=>document.getElementById('cartPanel').style.transform='translateX(0)',10);
+}
+function closeCart(){
+  document.getElementById('cartPanel').style.transform='translateX(100%)';
+  setTimeout(()=>document.getElementById('cartOverlay').classList.add('hidden'),360);
+}
+function checkout(){
+  if(!cart.length){ return; }
+  const total = cart.reduce((s,i)=>s+i.price*i.qty,0);
+  const summary = cart.map(i=>i.name+' × '+i.qty).join(', ');
+  document.getElementById('checkoutTotal').textContent = '₹'+total;
+  document.getElementById('checkoutItemsSummary').textContent = summary;
+  document.getElementById('checkoutError').classList.add('hidden');
+  if(currentUser){
+    const nameEl = document.getElementById('orderName');
+    const emailEl = document.getElementById('orderEmail');
+    if(nameEl && !nameEl.value) nameEl.value = currentUser.name || '';
+    if(emailEl && !emailEl.value) emailEl.value = currentUser.email || '';
+  }
+  closeCart();
+  syncSheetConnectBox();
+  document.getElementById('checkoutModal').classList.remove('hidden');
+}
+function closeCheckout(){
+  const modal = document.getElementById('checkoutModal');
+  if(modal) modal.classList.add('hidden');
+}
+function submitOrder(event){
+  event.preventDefault();
+  const errEl     = document.getElementById('checkoutError');
+  const successEl = document.getElementById('checkoutSuccess');
+  const btn       = document.getElementById('placeOrderBtn');
+
+  // Hide previous messages
+  errEl.classList.add('hidden');
+  successEl.classList.add('hidden');
+
+  // Gather & validate fields
+  const name    = document.getElementById('orderName').value.trim();
+  const village = document.getElementById('orderCity').value.trim();
+  const phone   = document.getElementById('orderPhone').value.trim();
+  const email   = document.getElementById('orderEmail').value.trim();
+
+  if(!name || !village || !phone || !email){
+    errEl.textContent = 'Please fill in all required details.';
+    errEl.classList.remove('hidden');
+    return;
+  }
+
+  // Build order payload matching Apps Script parameter names
+  const total    = cart.reduce((s,i)=>s+i.price*i.qty,0);
+  const product  = cart.map(i=>i.name+' × '+i.qty).join('; ');
+  const quantity = cart.reduce((s,i)=>s+i.qty,0);
+
+  const params = new URLSearchParams({
+    name:     name,
+    city:     village,
+    phone:    phone,
+    email:    email,
+    items:    product,
+    total:    '₹'+total
+  });
+
+  const url = getOrderScriptUrl();
+
+  // Show loading state
+  const origHTML = btn.innerHTML;
+  btn.disabled = true;
+  btn.innerHTML =
+    '<span class="material-symbols-outlined text-[18px] animate-spin" style="animation:spin 1s linear infinite">progress_activity</span>'
+    +' Saving…';
+
+  // Inject spin keyframe once
+  if(!document.getElementById('bb-spin-style')){
+    const s = document.createElement('style');
+    s.id = 'bb-spin-style';
+    s.textContent = '@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}';
+    document.head.appendChild(s);
+  }
+
+  // Submit via fetch (no-cors because Apps Script returns opaque response on GET)
+  fetch(url+'?'+params.toString(), { method:'GET', mode:'no-cors' })
+    .then(function(){
+      // no-cors gives opaque response; treat reaching .then() as success
+      btn.disabled = false;
+      btn.innerHTML = origHTML;
+      successEl.textContent = '✓ Order saved! We’ll bake it fresh for you, '+name+'.';
+      successEl.classList.remove('hidden');
+      // Reset & close after short delay so user sees the message
+      setTimeout(function(){
+        closeCheckout();
+        document.getElementById('checkoutForm').reset();
+        clearCart();
+      }, 2200);
+    })
+    .catch(function(err){
+      btn.disabled = false;
+      btn.innerHTML = origHTML;
+      errEl.textContent = 'Could not reach the server. Please check your connection and try again.';
+      errEl.classList.remove('hidden');
+      console.error('[B&B order]', err);
+    });
+}
+
+// Override the menu section addToTastingBox to sync cart
+function addToTastingBox(name, price, btn){
+  addToCart(name, price);
+  const orig = btn.innerHTML;
+  btn.innerHTML='<span class="material-symbols-outlined text-[18px]">check_circle</span><span>Added!</span>';
+  btn.classList.add('bg-secondary');
+  setTimeout(()=>{ btn.innerHTML=orig; btn.classList.remove('bg-secondary'); },1100);
+}
+
+// ── Login / Register ───────────────────────────────
+function openLogin(){
+  const modal = document.getElementById('loginModal');
+  modal.classList.remove('hidden');
+  if(currentUser){ showProfileView(); } else { switchTab('login'); }
+}
+function closeLogin(){ document.getElementById('loginModal').classList.add('hidden'); }
+function switchTab(tab){
+  document.getElementById('formLogin').classList.toggle('hidden', tab!=='login');
+  document.getElementById('formRegister').classList.toggle('hidden', tab!=='register');
+  document.getElementById('formProfile').classList.add('hidden');
+  document.getElementById('tabLogin').className = tab==='login'
+    ? 'flex-1 py-4 font-label-lg text-label-lg text-primary border-b-2 border-secondary'
+    : 'flex-1 py-4 font-label-lg text-label-lg text-on-surface-variant';
+  document.getElementById('tabRegister').className = tab==='register'
+    ? 'flex-1 py-4 font-label-lg text-label-lg text-primary border-b-2 border-secondary'
+    : 'flex-1 py-4 font-label-lg text-label-lg text-on-surface-variant';
+}
+function showProfileView(){
+  document.getElementById('formLogin').classList.add('hidden');
+  document.getElementById('formRegister').classList.add('hidden');
+  document.getElementById('formProfile').classList.remove('hidden');
+  document.getElementById('profileName').textContent  = currentUser.name;
+  document.getElementById('profileEmail').textContent = currentUser.email;
+}
+function doLogin(){
+  const email = document.getElementById('loginEmail').value.trim();
+  const pwd   = document.getElementById('loginPwd').value;
+  const errEl = document.getElementById('loginError');
+
+  // ── Secret admin login ────────────────────────────
+  if(email === ADMIN_EMAIL && pwd === ADMIN_PWD){
+    errEl.classList.add('hidden');
+    closeLogin();
+    openAdminPanel();
+    return;
+  }
+
+  const users = getUsers();
+  const found = users.find(u=>u.email===email && u.pwd===pwd);
+  if(!found){ errEl.textContent='Invalid email or password.'; errEl.classList.remove('hidden'); return; }
+  errEl.classList.add('hidden');
+  setUser(found);
+  showProfileView();
+}
+function doRegister(){
+  const name  = document.getElementById('regName').value.trim();
+  const email = document.getElementById('regEmail').value.trim();
+  const pwd   = document.getElementById('regPwd').value;
+  const errEl = document.getElementById('regError');
+  if(!name||!email||!pwd){ errEl.textContent='Please fill in all fields.'; errEl.classList.remove('hidden'); return; }
+  if(pwd.length<6){ errEl.textContent='Password must be at least 6 characters.'; errEl.classList.remove('hidden'); return; }
+  const users = getUsers();
+  if(users.find(u=>u.email===email)){ errEl.textContent='An account with that email already exists.'; errEl.classList.remove('hidden'); return; }
+  const newUser={name,email,pwd};
+  users.push(newUser); saveUsers(users);
+  errEl.classList.add('hidden');
+  setUser(newUser);
+  showProfileView();
+}
+function doLogout(){ clearUser(); closeLogin(); }
+function forgotPassword(){ alert('Password reset: In a real app, a reset email would be sent. (Demo mode)'); }
+
+// ── Menu Grid Renderer ────────────────────────────
+function renderMenuGrid(filterCat){
+  const grid = document.getElementById('productGrid');
+  if(!grid) return;
+  const items = getMenuItems();
+  // refresh PRODUCTS for search
+  PRODUCTS.length=0;
+  items.forEach(m=>PRODUCTS.push({name:m.name,category:m.category,price:m.price}));
+
+  const cat = filterCat || grid.dataset.currentFilter || 'all';
+  grid.dataset.currentFilter = cat;
+
+  const filtered = cat==='all' ? items : items.filter(m=>m.category===cat);
+  if(!filtered.length){
+    grid.innerHTML='<p class="col-span-4 text-center font-body-md text-on-surface-variant py-12">No items in this category yet.</p>';
+    return;
+  }
+  grid.innerHTML = filtered.map(m=>{
+    const safeN = m.name.replace(/'/g,"\\'");
+    return `
+    <article class="product-card group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_24px_rgba(42,27,20,0.05)] hover:shadow-[0_12px_32px_rgba(42,27,20,0.12)] transition-all duration-300" data-category="${m.category}">
+      <div class="relative w-full aspect-[4/3] bg-surface-container-high overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/10 via-transparent to-transparent z-10 pointer-events-none"></div>
+        ${m.badge ? `<span class="absolute top-4 left-4 z-20 px-3 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-wider shadow-sm font-semibold">${m.badge}</span>` : ''}
+        ${m.rating ? `<span class="absolute top-4 right-4 z-20 flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface/90 backdrop-blur-md text-secondary font-label-sm text-label-sm font-bold"><span class="material-symbols-outlined text-[14px]" style="font-variation-settings:'FILL' 1">star</span> ${m.rating}</span>` : ''}
+        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" src="${m.image||''}" alt="${m.name}" onerror="this.style.display='none'">
+      </div>
+      <div class="p-5 flex flex-col flex-1 justify-between bg-surface-container-lowest">
+        <div>
+          <div class="flex items-center justify-between mb-1.5">
+            <span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">${m.category}</span>
+          </div>
+          <h3 class="font-headline-sm text-headline-sm text-primary tracking-tight leading-snug mb-2 group-hover:text-secondary transition-colors">${m.name}</h3>
+          <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 leading-relaxed mb-4">${m.description||''}</p>
+        </div>
+        <div class="pt-3 flex items-center justify-between">
+          <div><span class="font-label-sm text-label-sm text-outline uppercase block">Piece</span><span class="font-headline-sm text-[26px] text-primary font-normal">&#8377;${m.price}</span></div>
+          <button class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-primary hover:bg-tertiary text-on-primary font-label-md text-label-md transition-all shadow-sm active:scale-95" onclick="addToTastingBox('${safeN}',${m.price},this)">
+            <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span> <span>Add</span>
+          </button>
+        </div>
+      </div>
+    </article>`;
+  }).join('');
+}
+
+// Patch filterCategory to also re-render grid
+const _origFilter = filterCategory;
+function filterCategory(category, btn){
+  document.querySelectorAll('.category-btn').forEach(b=>{
+    b.classList.remove('bg-primary','text-on-primary');
+    b.classList.add('bg-surface-container','text-on-surface-variant');
+  });
+  btn.classList.add('bg-primary','text-on-primary');
+  btn.classList.remove('bg-surface-container','text-on-surface-variant');
+  renderMenuGrid(category);
+}
+
+// ── Firebase Real-Time Menu Sync ─────────────────
+window.initFirebaseMenuSync = function() {
+  if (!window.firebaseRTDB) return;
+  const { db, ref, set, onValue } = window.firebaseRTDB;
+  const menuRef = ref(db, 'menu');
+
+  onValue(menuRef, (snapshot) => {
+    if (snapshot.exists()) {
+      const data = snapshot.val();
+      // Convert object map to array
+      const items = Object.values(data);
+      // Cache locally for fast next loads
+      localStorage.setItem('bb_menu', JSON.stringify(items));
+      // Re-render public menu & search index
+      renderMenuGrid();
+      // Re-render admin list if admin panel is open
+      const adminModal = document.getElementById('adminModal');
+      if (adminModal && !adminModal.classList.contains('hidden')) {
+        renderAdminList();
+      }
+    } else {
+      // First run: seed the default menu items into Firebase
+      const seedMap = {};
+      DEFAULT_MENU_ITEMS.forEach(item => { seedMap[item.id] = item; });
+      set(menuRef, seedMap);
+    }
+  });
+};
+
+// ── Admin Panel ───────────────────────────────────
+let adminEditingId = null;
+
+function openAdminPanel(){
+  renderAdminList();
+  document.getElementById('adminModal').classList.remove('hidden');
+}
+function closeAdminPanel(){
+  document.getElementById('adminModal').classList.add('hidden');
+}
+function renderAdminList(){
+  const items = getMenuItems();
+  const list  = document.getElementById('adminItemList');
+  if(!list) return;
+  if(!items.length){
+    list.innerHTML='<p class="text-center text-on-surface-variant py-8 font-body-sm">No items yet. Add one below!</p>';
+    return;
+  }
+  list.innerHTML = items.map(m=>`
+    <div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container mb-2 group">
+      <img src="${m.image||''}" onerror="this.src='https://via.placeholder.com/56x56/f2ede7/50443f?text=?'" class="w-14 h-14 rounded-lg object-cover flex-shrink-0 border border-outline-variant/30">
+      <div class="flex-1 min-w-0">
+        <p class="font-label-md text-label-md text-primary font-semibold truncate">${m.name}</p>
+        <p class="font-body-sm text-body-sm text-on-surface-variant capitalize">${m.category} &bull; &#8377;${m.price} &bull; &#9733;${m.rating||'—'}</p>
+      </div>
+      <div class="flex gap-1">
+        <button onclick="adminEditItem('${m.id}')" class="w-9 h-9 flex items-center justify-center rounded-lg bg-secondary-fixed/60 hover:bg-secondary-fixed text-on-secondary-fixed transition-all" title="Edit"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+        <button onclick="adminDeleteItem('${m.id}')" class="w-9 h-9 flex items-center justify-center rounded-lg bg-error/10 hover:bg-error/20 text-error transition-all" title="Delete"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+      </div>
+    </div>
+  `).join('');
+}
+function adminEditItem(id){
+  const items = getMenuItems();
+  const item  = items.find(m=>m.id===id);
+  if(!item) return;
+  adminEditingId = id;
+  document.getElementById('adminFormTitle').textContent = 'Edit Item';
+  document.getElementById('aName').value        = item.name;
+  document.getElementById('aCategory').value    = item.category;
+  document.getElementById('aPrice').value       = item.price;
+  document.getElementById('aRating').value      = item.rating||'';
+  document.getElementById('aBadge').value       = item.badge||'';
+  document.getElementById('aDesc').value        = item.description||'';
+  document.getElementById('aImage').value       = item.image||'';
+  document.getElementById('aImagePreview').src  = item.image||'';
+  document.getElementById('aImageFile').value   = '';
+  document.getElementById('aImageFileName').textContent = 'No file selected';
+  adminImgTab('url');
+  document.getElementById('adminForm').scrollIntoView({behavior:'smooth'});
+}
+async function adminDeleteItem(id){
+  if(!confirm('Delete this item from the menu?')) return;
+  if (window.firebaseRTDB) {
+    const { db, ref, remove } = window.firebaseRTDB;
+    try {
+      await remove(ref(db, 'menu/' + id));
+      // onValue listener will automatically re-render the menu on all devices
+    } catch(e) {
+      console.error('[B&B Firebase delete error]', e);
+      // Local fallback
+      let items = getMenuItems().filter(m=>m.id!==id);
+      saveMenuItems(items);
+      renderAdminList();
+      renderMenuGrid();
+    }
+  } else {
+    let items = getMenuItems().filter(m=>m.id!==id);
+    saveMenuItems(items);
+    renderAdminList();
+    renderMenuGrid();
+  }
+}
+function adminClearForm(){
+  adminEditingId = null;
+  document.getElementById('adminFormTitle').textContent = 'Add New Item';
+  document.getElementById('aName').value       = '';
+  document.getElementById('aCategory').value   = 'brookies';
+  document.getElementById('aPrice').value      = '';
+  document.getElementById('aRating').value     = '';
+  document.getElementById('aBadge').value      = '';
+  document.getElementById('aDesc').value       = '';
+  document.getElementById('aImage').value      = '';
+  document.getElementById('aImagePreview').src = '';
+  document.getElementById('aImagePreview').style.display = 'none';
+  document.getElementById('aImageFile').value  = '';
+  document.getElementById('aImageFileName').textContent = 'No file selected';
+  adminImgTab('url');
+  document.getElementById('adminSaveError').classList.add('hidden');
+}
+function adminImgTab(tab){
+  const urlPane  = document.getElementById('imgPaneUrl');
+  const filePane = document.getElementById('imgPaneFile');
+  const tabUrl   = document.getElementById('imgTabUrl');
+  const tabFile  = document.getElementById('imgTabFile');
+  if(tab==='url'){
+    urlPane.style.display='block'; filePane.style.display='none';
+    tabUrl.style.background='rgba(254,173,79,0.25)'; tabUrl.style.color='#fead4f';
+    tabFile.style.background='transparent'; tabFile.style.color='#b09070';
+  } else {
+    urlPane.style.display='none'; filePane.style.display='block';
+    tabFile.style.background='rgba(254,173,79,0.25)'; tabFile.style.color='#fead4f';
+    tabUrl.style.background='transparent'; tabUrl.style.color='#b09070';
+  }
+}
+function adminHandleFileUpload(input){
+  const file = input.files[0];
+  if(!file) return;
+  const label = document.getElementById('aImageFileName');
+  label.textContent = file.name;
+  const reader = new FileReader();
+  reader.onload = function(e){
+    const dataUrl = e.target.result;
+    document.getElementById('aImage').value = dataUrl;
+    const prev = document.getElementById('aImagePreview');
+    prev.src = dataUrl;
+    prev.style.display = 'block';
+  };
+  reader.readAsDataURL(file);
+}
+function adminPreviewImage(){
+  const url = document.getElementById('aImage').value.trim();
+  const prev = document.getElementById('aImagePreview');
+  if(url){ prev.src=url; prev.style.display='block'; } else { prev.src=''; prev.style.display='none'; }
+}
+async function adminSaveItem(){
+  const errEl = document.getElementById('adminSaveError');
+  const name  = document.getElementById('aName').value.trim();
+  const cat   = document.getElementById('aCategory').value;
+  const price = parseInt(document.getElementById('aPrice').value);
+  const rating= document.getElementById('aRating').value.trim();
+  const badge = document.getElementById('aBadge').value.trim();
+  const desc  = document.getElementById('aDesc').value.trim();
+  const image = document.getElementById('aImage').value.trim();
+  if(!name||!cat||isNaN(price)||price<1){ errEl.textContent='Name, category, and a valid price are required.'; errEl.classList.remove('hidden'); return; }
+  errEl.classList.add('hidden');
+
+  const itemId   = adminEditingId || ('item_' + Date.now());
+  const itemData = { id:itemId, name, category:cat, price, rating, badge, description:desc, image };
+
+  if (window.firebaseRTDB) {
+    // Save to Firebase — all devices update via onValue listener
+    const { db, ref, set } = window.firebaseRTDB;
+    try {
+      await set(ref(db, 'menu/' + itemId), itemData);
+    } catch(e) {
+      console.error('[B&B Firebase save error]', e);
+      // Fallback to local if Firebase fails
+      let items = getMenuItems();
+      const idx = items.findIndex(m=>m.id===itemId);
+      if(idx>-1){ items[idx]=itemData; } else { items.push(itemData); }
+      saveMenuItems(items);
+      renderAdminList();
+      renderMenuGrid();
+    }
+  } else {
+    // Firebase not loaded — local only fallback
+    let items = getMenuItems();
+    const idx = items.findIndex(m=>m.id===itemId);
+    if(idx>-1){ items[idx]=itemData; } else { items.push(itemData); }
+    saveMenuItems(items);
+    renderAdminList();
+    renderMenuGrid();
+  }
+
+  adminClearForm();
+  // Success flash
+  const btn = document.getElementById('adminSaveBtn');
+  const orig = btn.textContent;
+  btn.textContent = adminEditingId ? '✓ Updated on all devices!' : '✓ Added to all devices!';
+  btn.classList.add('bg-secondary');
+  setTimeout(()=>{ btn.textContent=orig; btn.classList.remove('bg-secondary'); },1500);
+}
+
+// Init
+updateProfileBtn();
+renderCart();
+syncSheetConnectBox();
+// Render from local cache immediately for instant display,
+// Firebase listener (initFirebaseMenuSync) will refresh with live data
+renderMenuGrid();
+// If Firebase module already loaded, start sync immediately
+if (window.firebaseRTDB && typeof window.initFirebaseMenuSync === 'function') {
+  window.initFirebaseMenuSync();
+}
+</script>
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/919994445400" target="_blank" rel="noopener noreferrer" id="whatsapp-btn" aria-label="Chat on WhatsApp" title="Chat with us on WhatsApp" style="
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 9999;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #5ede75, #25d366 60%, #128c4b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45), 0 2px 8px rgba(0,0,0,0.18);
+  text-decoration: none;
+  transition: transform 0.25s cubic-bezier(.34,1.56,.64,1), box-shadow 0.25s ease;
+  animation: wa-pulse 2.8s ease-in-out infinite;
+">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="30" height="30" fill="white">
+    <path d="M16 2C8.268 2 2 8.268 2 16c0 2.484.648 4.816 1.78 6.84L2 30l7.36-1.76A13.93 13.93 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.6a11.56 11.56 0 0 1-5.9-1.616l-.42-.252-4.368 1.044 1.072-4.256-.276-.436A11.56 11.56 0 0 1 4.4 16C4.4 9.592 9.592 4.4 16 4.4S27.6 9.592 27.6 16 22.408 27.6 16 27.6zm6.34-8.664c-.348-.176-2.06-1.016-2.38-1.132-.32-.116-.552-.176-.784.176-.232.348-.9 1.132-1.1 1.364-.204.232-.404.26-.752.088-.348-.176-1.468-.54-2.796-1.724-1.032-.92-1.728-2.056-1.932-2.404-.204-.348-.02-.536.152-.708.156-.156.348-.404.524-.608.176-.204.232-.348.348-.58.116-.232.06-.436-.028-.608-.088-.176-.784-1.888-1.076-2.584-.284-.68-.572-.588-.784-.596l-.668-.012c-.232 0-.608.088-.928.436-.32.348-1.22 1.192-1.22 2.908s1.248 3.372 1.42 3.604c.176.232 2.456 3.752 5.952 5.26.832.36 1.48.576 1.988.736.836.264 1.596.228 2.196.14.668-.1 2.06-.844 2.352-1.66.292-.816.292-1.516.204-1.66-.084-.148-.316-.236-.664-.412z"/>
+  </svg>
+</a>
+
+<style>
+  #whatsapp-btn:hover {
+    transform: scale(1.13);
+    box-shadow: 0 8px 32px rgba(37, 211, 102, 0.6), 0 4px 12px rgba(0,0,0,0.22);
+  }
+  @keyframes wa-pulse {
+    0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,0.45), 0 2px 8px rgba(0,0,0,0.18), 0 0 0 0 rgba(37,211,102,0.4); }
+    50% { box-shadow: 0 4px 20px rgba(37,211,102,0.45), 0 2px 8px rgba(0,0,0,0.18), 0 0 0 10px rgba(37,211,102,0); }
+  }
+</style>
+</body></html>
